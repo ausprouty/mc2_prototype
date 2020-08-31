@@ -1,0 +1,66 @@
+
+h1.satisfied{
+	font-family: "lexia", sans-serif;
+	font-size: 2em;
+	color:#de1e25;
+	margin-top:36px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+h1.satisfied-title{
+	font-family: "lexia", sans-serif;
+	font-size: 2em;
+	color:#de1e25;
+	
+}
+h2.satisfied{
+	font-family: "lexia", sans-serif;
+	font-size: 1.5em;
+	padding-top:10px;
+	padding-bottom: 10px;
+	color: black;
+}
+p.satisfied{
+	text-align:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left:10px;
+}	
+p.satisfied_verse{
+	text-align:left;
+	padding-left: 5px;
+	color:black;
+	font-style:italic;
+	padding-right: 5px;
+	margin-left:10px;
+}
+
+p.satisfied-list{
+	text-align:center;
+	padding-left: px;
+	padding-right: 5px;
+	line-height:1.5;
+}
+p.satisfied-footer{
+	text-align:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	color:#f38832; 
+	margin-bottom: 20px;
+	font-weight:bold;
+}
+img.satisfied{
+	width:90%;
+	max-width:280px;
+}
+blockquote {
+    padding: 0px 10px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    border-left: 3px solid #de1e25;
+}
+div.thumbnail{
+	text-align:center;
+}

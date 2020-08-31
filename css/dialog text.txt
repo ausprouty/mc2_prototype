@@ -1,0 +1,10 @@
+<!-- dialog box --->
+<div id = "white-background">
+</div>
+<div id = "dlgbox">
+	<div id="dlg-header">Series Name?</div>
+	<div id="dlg-body">Series ready for offline use</div>
+	<div id="dlg-footer"> 
+		<button onclick = "dlgOK()">OK</button>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+table.chapters{
+	width:90%;
+	margin-left:10px;
+	
+}
+td.chapter{
+	border-style: solid;
+	border-color: black;
+	text-align:center;
+	padding-top: 10px;
+	padding-bottom:10px;
+	background-color:#efefef;
+}
+.bible_book{
+	font-size :20px;
+	color:#de1e25;
+	font-weight:bold;
+	line-height: 30px;
+	padding-left:30px;
+	padding-right:30px;
+	
+}
+.bible{
+	line-height:25px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.chapter a
+{
+    display:block;
+    text-decoration:none;
+}

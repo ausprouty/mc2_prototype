@@ -1,0 +1,1200 @@
+.bible {
+  line-height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+button {
+  float: left;
+  color: #86BB71;
+  color: #F2F5F8;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #F2F5F8;
+  background: #86BB71;
+}
+
+button:hover {
+  color: darken(#86BB71, 7%);
+}
+p.button{
+	margin-bottom: 70px;
+}
+
+div.opening {
+  width: 97%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+img.opening-bar {
+  width: 97%;
+  max-width: 600px;
+  margin-top: -20px;
+}
+img.site-title{
+	 max-height: 40px;
+}
+div.lesson_div {
+  background-color: #de1e25;
+  color: white;
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 25px;
+}
+
+h1.myfriends {
+  color: #de1e25;
+  padding-left: 25px;
+  text-align: center;
+  font-weight: bold;
+  display: inline;
+}
+
+#mycontent{
+  padding-right: 20px;
+}
+#mycontent.rtl{
+	padding-right: 30px;
+}
+
+
+body {
+  font-family: "lexia", sans-serif;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+img.study {
+  height: 30px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+img.study-rtl {
+  height: 30px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+img.lesson-section {
+  vertical-align: middle;
+}
+
+div.lesson-section {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+div.lesson-section-words {
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 45px;
+  position: absolute;
+  color: #000;
+  bottom: 0;
+}
+div.lesson-section-words-rtl {
+  font-size: 30px;
+  line-height: 30px;
+  margin-right: 65px;
+  position: absolute;
+  color: #000;
+  bottom: 0;
+}
+
+div.myfriends {
+  font-size: 20px;
+  color: #de1e25;
+  font-weight: bold;
+  line-height: 30px;
+  margin-left: 55px;
+  position: absolute;
+  bottom: 10px;
+}
+div.opening{
+	width:97%;
+	margin-bottom:20px;
+	text-align:center;
+}
+div.opening-image{
+	width:97%;
+	max-width:600px;
+	margin-bottom:30px;
+	position: relative;
+}
+div.opening-image .rtl{
+    margin-right: 30px;
+}
+
+div.rtl{
+	direction:rlt;
+}
+img.opening-bar{
+	width:97%;
+	max-width:600px;
+	margin-top:-20px;
+}
+img.journey-read {
+    padding-right: 10px;
+    height: 30px;
+}
+div.opening-label{
+	width :97%;
+	max-width:600px;
+    position: absolute;
+	text-align:center;
+	color: #FFF;
+	top: 85%;
+	font-size:1.5em;
+	
+}
+p.reference{
+	font-size: 20px;
+	color:#de1e25;
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+p.myfriends-subheader{
+	padding-top: 20px;
+	font-weight: bold;
+}
+
+
+h2 {
+  line-height: 24px;
+  font-size: 24px;
+  margin-left: 15px;
+  //color: #de1e25;
+  color: black;
+}
+h2.red{
+	color: red;
+    padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: black;
+  padding-left: 10px;
+  background-color: #efefef;
+}
+
+div#bible {
+  background-color: #efefef;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+div.question_forward {
+  padding-bottom: 20px;
+}
+
+h3,div.publisher,div.bible {
+  background-color: #efefef;
+}
+
+.bible {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+p.bible{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+a.readmore, a.bible_readmore {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  height: auto;
+  border: 1;
+  padding: 6px 10px;
+  background-color: #de1e25;
+  border-color: #de1e25;
+  color: #fff;
+}
+
+
+ul.nodot{
+	list-style:none;
+	padding: 0;
+	margin:0;
+}
+li.firststeps{
+	padding-left:16px;
+}
+li.red:before
+{
+	content:'•';
+	color:#de1e25;
+	padding-right: 8px;
+	font-size:24px;
+}
+li.rtl.red:before
+{
+	content:'•';
+	padding-left: 8px;
+	font-size:24px;
+	color:#de1e25;
+}
+
+
+a {
+  color: #de1e25;
+}
+
+.read,.bold {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+p.read {
+  padding-left: 20px;
+}
+
+
+
+p.copyright {
+  font-size: small;
+}
+
+p.copyright {
+  padding-bottom: 60px;
+}
+
+p.lesson_start {
+  padding-top: 30px;
+}
+
+a.lessons {
+  color: black;
+}
+
+li.lessons {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #efefef;
+}
+
+ul.lessons {
+  -webkit-padding-start: 5px;
+  list-style-type: none;
+}
+/* From MyFriends */
+
+
+
+
+
+div.five-pixel,
+div.gospel-body{
+	margin-left:5px;
+	margin-right:5px;
+}
+div.description{
+	padding-top: 20px;
+	font-size:1.5em;
+	line-height:1.5;
+}
+div.lesson_div{
+	background-color:#de1e25;
+	color:white;
+	font-size:1.5em;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	width:95%;
+	padding-bottom: 20px;
+	line-height: 25px;
+}
+div.share{
+	text-align:right;
+	padding-top: 20px;
+	margin-right: 20px;
+	text-decoration: underline;
+}
+
+
+div.question_forward{
+	color:#000;
+}
+div.answer_forward{
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:30px;
+	padding-right:30px;
+}
+div.background-text{
+	padding-left:10px;
+	padding-right:10px;
+}
+div.rtl .background-text{
+	margin-right:30px;
+}
+div.note{
+	margin-left: 25px;
+	margin-right:10px;
+	color:#de1e25;
+}
+div.share,
+div.note_back,
+div.note_up,
+div.note_forward,
+div.note-study,
+div.note-sharing,
+div.note-challenge,
+div.note_study,
+div.note_sharing,
+div.note_challenge
+
+{
+	display:none;
+}
+
+
+
+img.opening-image{
+	width:97%;
+}
+img.point{
+	padding-right: 10px;
+	height:15px;
+}
+
+h1.myfriends{
+	color: #de1e25;
+	padding-left: 25px;
+	text-align:center;
+	font-weight: bold; 
+	display: inline;
+}
+	
+
+
+body{
+	font-family: "lexia", sans-serif;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+td.gospel-box{
+	border: #085276 solid 2px;
+}
+.gospel-prayer{
+	font-style: italic; 
+	font-weight: bold; 
+	color: #085276; 
+	background-image: url("../files/images/quote_open.gif"); 
+	background-repeat: no-repeat; 
+	background-position: 10px top;	
+	padding-left: 35px;
+}
+
+
+img.study{
+	height: 30px;
+	margin-right: 20px;
+	vertical-align:middle;
+}
+img.lesson-section{
+	vertical-align:middle;
+	
+}
+div.lesson-section{
+	position:relative;
+	margin-top:30px;
+	margin-bottom:30px;
+	
+}
+div.lesson-section-words{
+	
+	font-size :24px;
+	line-height: 24px;
+	margin-left:45px;
+	position:absolute;
+	bottom:0;
+	
+}
+div.oneline{
+	vertical-align:top;
+	position:relative;
+}
+div.myfriends{
+	font-size :20px;
+	color:#de1e25;
+	font-weight:bold;
+	line-height: 30px;
+	margin-left:55px;
+	position:absolute;
+	bottom:10px;
+	
+}
+h2{
+	line-height: 24px;
+	font-size :24px;
+	margin-left:15px;
+	//color:#de1e25;
+	color:black;
+}
+
+h3{
+	font-size :20px;
+	color:black;
+	padding-left:10px;
+	background-color:#efefef;
+	
+}
+h3.gospel{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+ol.lower-alpha {
+	list-style-type: lower-alpha;
+}
+div#bible{
+	background-color:#efefef;
+	padding-top: 20px;
+	padding-bottom:20px;
+	
+}
+
+h3,
+div.publisher,
+div.bible{
+	background-color:#efefef;
+	
+}
+
+.bible_text{
+	font-style:italic;
+	font-weight:bold;
+	padding-left:40px;
+}
+.gospel_text{
+	padding-top: 30px;
+	padding-bottom: 10px;
+	padding-left:40px;
+	padding-right:10px;
+}
+
+a.readmore, a.bible_readmore  {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 0;
+	height: auto;
+	border: 1;
+	padding: 6px 10px;
+	background-color: #de1e25;
+	border-color: #de1e25;
+	color: #fff;
+}
+a{
+	color: #de1e25;
+	
+}
+a.complete{
+    
+	color: black;
+}
+a.incomplete{
+	color: black;
+	font-weight: bold;
+}
+.conclusion,
+.key,
+.notes,
+.pray,
+.read,
+.bold,
+.statement
+{
+	font-weight: bold;
+	padding-top:20px;
+}
+p.conclusion,
+p.key,
+p.notes,
+p.prayer,
+p.read,
+p.statement
+{
+	padding-left:20px;
+}
+.border_red{
+	border-color: black;
+	
+}
+
+p{
+	padding-left:15px;
+	padding-right:25px;
+}
+p.gospel{
+	padding-left:15px;
+	padding-right:15px;
+}
+p.copyright{
+	font-size:small;
+}
+
+p.copyright{
+	padding-bottom: 60px;
+}
+p.lesson_end{
+	padding-bottom: 260px;
+	
+}
+p#offline-ready{
+	color:#de1e25;
+	text-align:center;
+	font-size:80%;
+	visibility:hidden;
+}
+
+img.rtl{
+	padding-left:10px;
+	padding-right:0px;
+}
+
+.lesson_title{
+	font-size :30px;
+	color:white;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom: 30px;
+	text-align:center;
+	line-height:35px;
+	
+}
+
+p.lesson_start{
+	padding-top: 30px;
+	
+}
+p.form_end{
+	padding-bottom: 200px;
+	
+}
+p.opening-label{
+	color: #FFF;
+	font-size:1em;
+	margin-left:50%;
+	margin-right:50%;
+}
+a.basics,
+a.lessons{
+	color:black;
+}
+
+li.basics,
+li.lessons{
+	padding-left:5px;
+	padding-right:5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color:#efefef;
+	
+	
+}
+ul.basics,
+ul.lessons{
+	-webkit-padding-start: 5px;
+	list-style-type: none;
+}
+
+.border_#de1e25 {
+	border: 2px solid #de1e25;
+	
+}
+.contact_indent{
+	padding-left:10px;
+	border: 2px solid #efefef;
+}
+.contact_checkbox{
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.contact_text{
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+.red{
+	color:#de1e25;
+}
+.nocode_checkbox{
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 5px;
+}
+
+.menu-second{
+	background-color:#eee;
+}
+.menu-second a:hover {background-color: #ddd}
+
+.question_form{
+	background-color: #ddd;
+}
+
+//from satisfied
+
+h1.satisfied{
+	font-family: "lexia", sans-serif;
+	font-size: 2em;
+	color:#de1e25;
+	margin-top:36px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+h1.satisfied-title{
+	font-family: "lexia", sans-serif;
+	font-size: 2em;
+	color:#de1e25;
+	
+}
+h2.satisfied{
+	font-family: "lexia", sans-serif;
+	font-size: 1.5em;
+	padding-top:10px;
+	padding-bottom: 10px;
+	color: black;
+}
+p.satisfied{
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left:10px;
+}	
+p.satisfied_verse{
+	text-align:left;
+	padding-left: 5px;
+	color:black;
+	font-style:italic;
+	padding-right: 5px;
+	margin-left:10px;
+}
+
+p.satisfied-list{
+	text-align:center;
+	padding-left: px;
+	padding-right: 5px;
+	line-height:1.5;
+}
+p.satisfied-footer{
+	text-align:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	color:#f38832; 
+	margin-bottom: 20px;
+	font-weight:bold;
+}
+img.satisfied{
+	width:90%;
+	max-width:280px;
+}
+blockquote {
+    padding: 0px 10px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    border-left: 3px solid #de1e25;
+}
+div.thumbnail{
+	text-align:center;
+}
+
+
+html{
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header,nav,section {
+  display: block;
+}
+
+[hidden] {
+  display: none;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,a:hover {
+  outline: 0;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+  color:#356987;
+}
+
+sup {
+  top: -.5em;
+}
+
+img {
+  border: 0;
+}
+
+hr {
+  height: 0;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 21px;
+  width :100%;
+  max-width: 600px;
+  color: #000;
+  background-color: #fff;
+}
+
+a {
+  color: #428bca;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:active {
+  color: #3071a9;
+}
+
+
+
+
+
+.bar-nav ~ .content {
+  padding-top: 44px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1;
+  color: #356987
+  
+}
+
+h1,.h1 {
+  font-size: 36px;
+}
+
+h2,.h2 {
+  font-size: 30px;
+}
+
+
+h3,.h3 {
+  font-size: 24px;
+  color: #f65058;
+}
+
+h4,.h4 {
+  font-size: 18px;
+}
+
+h5,.h5 {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+h6,.h6 {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #444;
+}
+p.rtl, h1.rtl, h2.rtl, h3.rtl {
+	padding-right:20px;
+	padding-left:0px;
+}
+ol.rtl{
+ list-style: arabic-indic;
+}
+.rtl .lesson_title{
+	padding-right: 20px;
+}
+p.bible, div.bible{
+	color:000;
+	font-weight:bold;
+}
+
+p.conclusion, p.key, p.notes, p.prayer, p.read, p.statement {
+    padding-left: 20px;
+}
+
+
+p.read {
+    margin-bottom: 24px;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+.conclusion, .key, .notes, .pray, .read, .bold, .statement {
+    font-weight: bold;
+}
+
+.navigation{
+	color:#de1e25;
+	font-size: 30px;
+	float:left;
+	margin-left: 10px;
+	padding-top:6px;
+}
+
+.bar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bar-nav {
+  height: 84px;
+  top: 0;
+}
+
+.table-view {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  list-style: none;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.table-view-cell {
+  position: relative;
+  padding: 11px 65px 11px 15px;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.table-view-cell > a:not(.btn) {
+    position: relative;
+    display: block;
+    padding: inherit;
+    margin: -11px -65px -11px -15px;
+    overflow: hidden;
+    color: inherit;
+}
+
+.table-view-cell:last-child {
+  border-bottom: 0;
+}
+
+.table-view-cell p {
+  margin-bottom: 0;
+}
+
+.table-view-cell > .toggle,.table-view-cell > a > .toggle {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+a.table-link {
+    background-color: #efefef;
+}
+
+.table-view .media-object.pull-left {
+    margin-right: 10px;
+}
+img.list-image {
+    height: 30px;
+}
+.pull-left {
+    float: left;
+}
+
+.content > .table-view:first-child {
+  margin-top: 15px;
+}
+
+button {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.toggle {
+  position: relative;
+  display: block;
+  width: 74px;
+  height: 30px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  -webkit-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-property: background-color, border;
+  -moz-transition-property: background-color, border;
+  transition-property: background-color, border;
+}
+
+.toggle:before {
+  position: absolute;
+  top: 3px;
+  right: 11px;
+  font-size: 13px;
+  color: #999;
+  text-transform: uppercase;
+  content: "Off";
+}
+
+@font-face {
+  font-family: Ratchicons;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ratchicons.eot");
+  src: url("../fonts/ratchicons.eot?#iefix") format("embedded-opentype"), url("../fonts/ratchicons.woff") format("woff"), url("../fonts/ratchicons.ttf") format("truetype"), url("../fonts/ratchicons.svg#svgFontName") format("svg");
+}
+
+ul {
+  clear: both;
+  color:black;
+}
+
+.table-view {
+  margin: 0 !important;
+  border: none;
+}
+
+li {
+  margin-top: 10px;
+  margin-right:40px;
+}
+li.rtl,
+ol.rtl {
+  margin-right:1px;
+}
+
+img.opening,
+img.next {
+  width: 97%;
+  height: auto;
+  max-width: 600px;
+}
+
+/* Dropdown Menu */
+
+.one-line {
+  padding-top: 25px;
+}
+
+.dropbtn {
+  background-color: #de1e25;
+  background-image: url("../images/menu.png");
+  display: block;
+  width: 32px;
+  height: 32px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,.dropbtn:focus {
+  background-color: #3e8e41;
+  background-color: #085276;
+  background-color: #de1e25;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  /* //  display: inline-block;*/
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+  display: block;
+}
+.cache-series{
+  background: #de1e25;
+  background-image: -webkit-linear-gradient(top, #de1e25, #de1e25);
+  background-image: -moz-linear-gradient(top, #de1e25, #de1e25);
+  background-image: -ms-linear-gradient(top, #de1e25, #de1e25);
+  background-image: -o-linear-gradient(top, #de1e25, #de1e25);
+  background-image: linear-gradient(to bottom, #de1e25, #de1e25);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  visibility:hidden;
+}
+
+.cache-series:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+h2.biblestudy{
+	color:#000;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+div.journey-notice{
+	 background: #000080;
+	 text-align: left;
+}
+div.journey-notice-image{
+	 background: #000;
+	 text-align: center;
+	 padding: 10px 20px 10px 20px;
+	
+}
+p.journey-notice-title{
+	text-align: center;
+	margin-top:10px;
+	font-weight:bold;
+}
+p.journey-button{
+	color:green;
+}
+img.journey-notice-icon{
+	width: 80%;
+	max-width: 100px;
+}
+img.journey-notice-homescreen{
+	width: 98%;
+}
+p.journey-notice{
+	font-size: 15px;
+	padding: 10px 0px 10px 0px;
+	color:white;
+	font-weight:bold;
+}
+
+
