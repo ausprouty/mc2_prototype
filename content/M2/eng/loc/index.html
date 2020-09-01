@@ -95,34 +95,73 @@
     <meta name="theme-color" content="#F2F5F8" />
     <link href="/content/ZZ/styles/appGLOBAL.css" rel="stylesheet" />
     <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
-    <link href="/content/ZZ/styles/cardGLOBAL.css" rel="stylesheet" />
+    <link href="/content/ZZ/styles/myfriendsGLOBAL.css" rel="stylesheet" />
   </head>
   <body id="app" class="container"  >
 
+<link rel="stylesheet" href="/content/ZZ/styles/cardGLOBAL.css" />
+<link rel="stylesheet" href="/content/ZZ/styles/myfriendsGLOBAL.css" />
 <div id="nav">
-  <img class="nav-icon" alt="Home" src="/images/menu/header-front.png" />
-</div>
-<div class="content">
-  <img src="/images/country/world.jpg" class="app-img-header" />
-  <h1 class="list_header">Select Country</h1>
-  <div class="app-link">
-  <a class="card-link" href="/content/M2/eng/index.html">
-    <div class="shadow-card -shadow">
-      <img src="/images/country/M2.png" class="book" />
-      <div class="card-names">
-        <span class="card-name">MC2</span>
-        <br />
-        <span class="card-name-english">MC2</span>
-      </div>
-    </div>
-  </a>
-</div>
-
-  <div class="version">
-    <p class="version">Version 1.07</p>
+  <div class="nav full">
+    <a class="card-link" href="/content/M2/eng/resources.html">
+      <img src="/content/ZZ/images/ribbons/back-ribbon-mc2.png" class="nav full" />
+    </a>
   </div>
 </div>
-<!--- Created by prototypeCountries-->
+
+<div class="content" dir="ltr">
+ 
+  <div  class="app-series-header">
+    <img src="/content/M2/images/standard/Jesus.png" class="app-series-header" />
+  </div>
+  <!-- ready for offline --->
+  <p class="ltr" id="offline-ready">Ready for Offline Use</p>
+  <!-- title --->
+  <h2>Life of Christ</h2>
+  <div>Jesus is our model for all things in life and ministry and how to build a disciplemaking movement. In that sense Jesus is also our model of a movement building leader. By looking at his life and ministry chronologically we can see how his movement started, progressed and developed over time. Even though our context is different, Jesus movement development highlights key priorities and principles of movement building and disciplemaking.   In Being and Leading Like Jesus you will discover how Jesus didn’t just do ministry but also grew and launched a movement that still impacts the world today. </div>
+  <br />
+  <br />
+  <!-- chapters --->
+  
+  <div>
+    <p class="button center">
+      <button
+        id="offline-request"
+        class="cache-series"
+        data-json="/content/M2/eng/loc/files.json"
+        style="visibility: hidden;"
+      >
+        Download for offline use
+      </button>
+    </p>
+    <!-- copyright --->
+    <p class="ltr copyright"></p>
+    <!-- version --->
+    <div class="version">
+      <p class="version">Version 1.07</p>
+    </div>
+  </div>
+  <div class="languages" id="languages"><a class="no_underline" href="/content/languages.html"><img class="languages" src="/content/M2/images/standard/OtherLanguagesTop.png" /><br />
+OTHER LANGUAGES <img class="languages" src="/content/M2/images/standard/OtherLanguagesBottom.png" /> </a></div>
+
+<table class="social">
+	<tbody>
+		<tr>
+			<td class="social"><a href="https://www.instagram.com/myfriendsaustralia/" target="a_blank"><img class="social" src="/content/M2/images/standard/Instagram.png" /> </a></td>
+			<td class="social"><a href="javascript:void(0);" onclick="facebook(339218283324109)"><img class="social" src="/content/M2/images/standard/Facebook.png" /> </a></td>
+			<td class="social"><a href="javascript:void(0);" onclick="share()"><img class="social" src="/content/M2/images/standard/Share.png" /></a></td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="footer">
+<p class="footer">MC2</p>
+
+<p class="footer"><a class="no_underline" href="https://mc2.online">mc2.online</a></p>
+</div>
+
+</div>
+<!--- Created by prototypeSeries-->
 
       <!--- End Content -->
         <script src="/js/ShowMenu.js"></script>
