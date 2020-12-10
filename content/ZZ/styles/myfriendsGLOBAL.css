@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   width: 95%;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans" , Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -60,7 +60,7 @@ div.note-area {
   background-color:white
  }
  textarea {
-   background-color: red;
+   background-color: white;
  }
 
 h1,
@@ -72,7 +72,7 @@ h6 {
   margin-left: 10px;
   margin-right: 10px;
   align-items: center;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans" , Arial, Helvetica, sans-serif;
 }
 h1 {
   font-size: 30px;
@@ -147,7 +147,7 @@ optgroup,
 select,
 textarea {
   display: inline-flex;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans" , Arial, Helvetica, sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -466,7 +466,7 @@ p.reference {
 
 div.footer {
   text-align: center;
-  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-family: "Open Sans" , Arial, Helvetica, sans-serif;
   padding-bottom: 75px;
   margin-top: 96px;
 }

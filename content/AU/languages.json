@@ -1,0 +1,104 @@
+[{
+"name" : "አማርኛ (Amharic)",
+"iso" : "amh",
+"folder" : "ZZ/amh",
+"image_dir" : "ZZ/images/ethiopian",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "عربى (Arabic)",
+"iso" : "arb",
+"folder" : "ZZ/arb",
+"image_dir" : "ZZ/images/middle_east",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "Deutsch (German)",
+"iso" : "deu",
+"folder" : "ZZ/deu",
+"image_dir" : "ZZ/images/europe",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "English",
+"iso" : "eng",
+"folder" : "ZZ/eng",
+"image_dir" : "AU/images/standard",
+"lrdir" : "ltr",
+"publish" : "1"
+},
+{
+"name" : "Français (French)",
+"iso" : "fra",
+"folder" : "ZZ/fra",
+"image_dir" : "ZZ/images/europe",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "Afaan Oromoo (Oromo)",
+"iso" : "gaz",
+"folder" : "ZZ/gaz",
+"image_dir" : "ZZ/images/ethiopian",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "हिंदी (Hindi)",
+"iso" : "hin",
+"folder" : "ZZ/hin",
+"image_dir" : "ZZ/images/india",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "Hindi - Romanized",
+"iso" : "hin-en",
+"folder" : "ZZ/hinr",
+"image_dir" : "ZZ/images/india",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "Português (Portugese)",
+"iso" : "por",
+"folder" : "ZZ/por",
+"image_dir" : "ZZ/images/europe",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "Español - América Latina (Spanish - Latin America)",
+"iso" : "spa",
+"folder" : "ZZ/spa",
+"image_dir" : "ZZ/images/europe",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "தமிழ் (Tamil)",
+"iso" : "tam",
+"folder" : "ZZ/tam",
+"image_dir" : "ZZ/images/india",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "اُردُو‬ (Urdu)",
+"iso" : "urd",
+"folder" : "ZZ/urd",
+"image_dir" : "ZZ/images/middle_east",
+"lrdir" : "ltr",
+"publish" : ""
+},
+{
+"name" : "简体中文(Chinese)",
+"iso" : "zh-s",
+"folder" : "ZZ/zhs",
+"image_dir" : "ZZ/images/china",
+"lrdir" : "ltr",
+"publish" : ""
+}]

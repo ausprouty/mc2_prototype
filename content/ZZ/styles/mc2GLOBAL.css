@@ -1,16 +1,18 @@
 :root {
-  --color-black: black;
-  --color-red: #d24f53;
-  --color-blue: #124c7c;
-  --color-background: #f2ede6;
-  --color-version: #164c7f;
-  --color-back: black;
-  --color-up: black;
-  --color-forward: black;
+  --color-black-mc2: black;
+  --color-blue-mc2: #124c7c;
+  --color-back-mc2ground-mc2: #f2ede6;
+  --color-version-mc2: #164c7f;
+  --color-back-mc2: black;
+  --color-up-mc2: black;
+  --color-forward-mc2: black;
+  --color-trainer-mc2: orange;
+  --color-reveal-mc2: grey;
+  --color-bible-link-mc2: #164c7f;
 }
 
 #offline-ready {
-  color: var(--color-up);
+  color: var(--color-up-mc2);
 }
 html {
   -webkit-text-size-adjust: 100%;
@@ -26,13 +28,13 @@ body {
 }
 
 .back {
-  color: var(--color-back);
+  color: var(--color-back-mc2);
 }
 .up {
-  color: var(--color-up);
+  color: var(--color-up-mc2);
 }
 .forward {
-  color: var(--color-forward);
+  color: var(--color-forward-mc2);
 }
 p.indent {
   margin-left: 20px;
@@ -45,7 +47,8 @@ p.indent {
 }
 div.note-area {
   width: 100%;
-  background-color: white;
+  display: block;
+  background-color: #efefef;
 }
 textarea {
   background-color: #efefef;
@@ -53,10 +56,103 @@ textarea {
 }
 .year {
   text-align: center;
-  color: var(--color-red);
+  color: var(--color-blue-mc2);
   font-weight: bold;
 }
+div.trainer {
+  color: ;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  padding: 5 px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  background: var(--color-trainer-mc2) url(/images/trainer.png);
+  background-position: 8px 2px;
+  background-repeat: no-repeat;
+}
+div.trainer-hide {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.reveal {
+  color: var(--color-reveal-mc2);
+  background-color: pink;
+}
+hr.reveal {
+  border-top: 1px dashed red;
+}
+.action,
+.collapsible {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  padding: 18px;
+  padding-left: 60px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  background: var(--color-blue-mc2) url(/images/reveal.png);
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+.action{
+  background: var(--color-blue-mc2) url(/images/action.png);
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
 
+}
+.revealed {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  padding: 18px;
+  padding-left: 60px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  background: #777 url(/images/revealed.png);
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsed {
+  padding: 28px;
+  font-weight: bold;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+div.login-note {
+  text-align: center;
+  height: 100 px;
+  padding-bottom: 50px;
+}
+
+.bible-link {
+  color: var(--color-bible-link-mc2);
+}
+.dbs-instruction {
+  color: var(--color-blue-mc2);
+  font-style: italic;
+}
 .badge {
   display: inline-flex;
   height: 26px;
@@ -74,7 +170,7 @@ textarea {
   color: #fff;
 }
 .cache-series {
-  background-color: var(--color-up);
+  background-color: var(--color-up-mc2);
 }
 .for-enrichment {
   background-color: #e6ecf2;
@@ -100,7 +196,7 @@ h6 {
 h1 {
   font-size: 30px;
   font-weight: 700;
-  color: var(--color-blue);
+  color: var(--color-blue-mc2);
   display: inline;
 }
 h2 {
@@ -132,10 +228,10 @@ small {
   font-size: 80%;
 }
 .error {
-  border: 1px solid var(--color-red);
+  border: 1px solid var(--color-blue-mc2);
 }
 .errorMessage {
-  color: var(--color-red);
+  color: var(--color-blue-mc2);
 }
 .eyebrow {
   font-size: 20px;
@@ -211,7 +307,7 @@ button {
   padding: 0 40px;
 }
 .button.red {
-  background-color: var(--color-red);
+  background-color: var(--color-blue-mc2);
   height: 48px;
 }
 .button.grey {
@@ -220,7 +316,7 @@ button {
 }
 div.bible_container,
 div.bible {
-  background-color: var(--color-background);
+  background-color: var(--color-back-mc2ground-mc2);
   padding-left: 10px;
   line-height: 25px;
   margin-left: 0px;
@@ -340,7 +436,7 @@ label,
 }
 p.version {
   text-align: center;
-  color: var(--color-version);
+  color: var(--color-version-mc2);
   font-size: 10pt;
 }
 p.rtl {
@@ -383,15 +479,15 @@ p.bible {
 }
 a {
   background: transparent;
-  color: var(--color-blue);
+  color: var(--color-blue-mc2);
 }
 a:active,
 a:hover {
   outline: 0;
 }
 a.bible-readmore {
-  background-color: var(--color-blue);
-  border-color: var(--color-blue);
+  background-color: var(--color-blue-mc2);
+  border-color: var(--color-blue-mc2);
   border: 1px;
   color: #fff;
   height: auto;
@@ -403,7 +499,7 @@ a.bible-readmore {
 
 sup,
 .versenum {
-  color: var(--color-blue);
+  color: var(--color-blue-mc2);
   font-size: 75%;
   line-height: 0;
   padding-right: 2px;
@@ -431,7 +527,7 @@ div.lesson.rtl {
 div.lesson-subtitle,
 div.lesson-section {
   bottom: 0;
-  color: var(--color-black);
+  color: var(--color-black-mc2);
   font-size: 30px;
   line-height: 30px;
   margin-left: 45px;
@@ -440,7 +536,7 @@ div.lesson-section {
 div.myfriends-lesson-subtitle-rtl,
 div.lesson-subtitle.rtl {
   bottom: 0;
-  color: var(--color-black);
+  color: var(--color-black-mc2);
   font-size: 30px;
   line-height: 30px;
   margin-right: 65px;
@@ -472,14 +568,14 @@ img.lesson-rtl-icon {
   width: 30px;
 }
 li.ltr {
-  color: var(--color-blue);
+  color: var(--color-blue-mc2);
 }
 p {
   text-align: left;
 }
 p.reference {
   padding-top: 20px;
-  color: var(--color-red);
+  color: var(--color-blue-mc2);
   font-size: 20px;
   padding-bottom: 20px;
 }
@@ -511,11 +607,14 @@ div.float left {
   }
   div.lesson-subtitle,
   div.lesson-section {
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 700;
   }
   p,
   p.myfriends-gospel-text {
     font-size: 12pt;
+  }
+  ul {
+    padding-left: 15px;
   }
 }
