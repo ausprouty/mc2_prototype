@@ -5,7 +5,7 @@ STructural Elements
 #app {
   box-sizing: border-box;
   width: 90%;
-  background-color: #F8F5F1;
+  background-color: #f2ede6;
   padding: 0px 0px 0px 0px;
   margin: 0 auto;
 }
@@ -96,20 +96,20 @@ Download Commands
   text-align: center;
 }
 p#offline-ready {
-  color: #D04F53;
+  color: #de1e25;
   text-align: center;
   font-size: 80%;
   visibility: hidden;
 }
 .cache-series {
-  background: #D04F53;
-  background-image: -webkit-linear-gradient(top, #D04F53, #D04F53);
-  background-image: -moz-linear-gradient(top, #D04F53, #D04F53);
-  background-image: -ms-linear-gradient(top, #D04F53, #D04F53);
-  background-image: -o-linear-gradient(top, #D04F53, #D04F53);
-  background-image: linear-gradient(to bottom, #D04F53, #D04F53);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
+  background: #de1e25;
+  background-image: -webkit-linear-gradient(top, #de1e25, #de1e25);
+  background-image: -moz-linear-gradient(top, #de1e25, #de1e25);
+  background-image: -ms-linear-gradient(top, #de1e25, #de1e25);
+  background-image: -o-linear-gradient(top, #de1e25, #de1e25);
+  background-image: linear-gradient(to bottom, #de1e25, #de1e25);
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
   border-radius: 28px;
   font-family: Open Sans, Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -130,7 +130,7 @@ Languages
 }
 img.languages {
   width: 80%;
-  max-width: 400;
+  max-width:400px;
 }
 div.languages {
   text-align: center;
@@ -217,4 +217,10 @@ div.iframe-container {
 /* 4x3 Aspect Ratio */
 .iframe-container-4x3 {
   padding-top: 75%;
+}
+
+
+.hidden-video,
+.hidden-bible{
+  visibility:hidden;
 }

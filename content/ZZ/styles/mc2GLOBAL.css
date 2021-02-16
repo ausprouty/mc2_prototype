@@ -27,15 +27,6 @@ body {
   line-height: 1.5;
 }
 
-.back {
-  color: var(--color-back-mc2);
-}
-.up {
-  color: var(--color-up-mc2);
-}
-.forward {
-  color: var(--color-forward-mc2);
-}
 p.indent {
   margin-left: 20px;
 }
@@ -81,12 +72,20 @@ div.trainer-hide {
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
 .reveal {
-  color: var(--color-reveal-mc2);
-  background-color: pink;
+  background: lightblue url(/images/reveal.png);
+  background-position: 8px 2px;
+  background-repeat: no-repeat;
 }
 hr.reveal {
   border-top: 1px dashed red;
+}
+.reveal.bible {
+  color: black;
+  background: pink url(/images/bible.png);
+  background-position: 8px 2px;
+  background-repeat: no-repeat;
 }
 .action,
 .collapsible {
@@ -105,11 +104,20 @@ hr.reveal {
   background-position: 8px 8px;
   background-repeat: no-repeat;
 }
-.action{
+.action {
   background: var(--color-blue-mc2) url(/images/action.png);
   background-position: 8px 8px;
   background-repeat: no-repeat;
-
+}
+.collapsible.bible {
+  background: var(--color-blue-mc2) url(/images/bible.png);
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+.collapsible.external-movie {
+  background: var(--color-blue-mc2) url(/images/video.png);
+  background-position: 8px 15px;
+  background-repeat: no-repeat;
 }
 .revealed {
   color: white;
@@ -123,7 +131,17 @@ hr.reveal {
   text-align: left;
   outline: none;
   font-size: 15px;
-  background: #777 url(/images/revealed.png);
+  background: #777 url(/images/white_minus.png);
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+.revealed.bible {
+  background: #777 url(/images/white_minus.png);
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+.revealed.video {
+  background: #777 url(/images/white_minus.png);
   background-position: 8px 8px;
   background-repeat: no-repeat;
 }
@@ -131,6 +149,7 @@ hr.reveal {
 .active,
 .collapsible:hover {
   background-color: #555;
+  color: white;
 }
 
 .collapsed {
@@ -140,6 +159,7 @@ hr.reveal {
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
 div.login-note {
   text-align: center;
   height: 100 px;
@@ -175,6 +195,7 @@ div.login-note {
 .for-enrichment {
   background-color: #e6ecf2;
   padding: 10px;
+  line-height: 2em;
 }
 .preview {
   background-color: white;
@@ -202,10 +223,13 @@ h1 {
 h2 {
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 0px;
+  color: black;
 }
 h3 {
   font-size: 16px;
   font-weight: 700;
+  color: var(--color-blue-mc2);
 }
 h4 {
   font-size: 14px;
@@ -617,4 +641,32 @@ div.float left {
   ul {
     padding-left: 15px;
   }
+}
+/* added by Keith Seabourn */
+#breakout_room {
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#breakout_room td,
+#breakout_room th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#breakout_room tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#breakout_room tr:hover {
+  background-color: #ddd;
+}
+
+#breakout_room th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--color-blue-mc2);
+  color: white;
 }

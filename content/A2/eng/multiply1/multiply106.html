@@ -97,8 +97,9 @@
     <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
     <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
   </head>
-  <body id="app" class="container"  >
+  <body id="app" class="container"  onLoad= "showNotes('A2-eng-multiply1-multiply106.html')"  >
 
+<!--- PrototypeOrpublish added onLoad -->
 <link rel="stylesheet" href="/content/ZZ/styles/cardGLOBAL.css" />
 <link rel="stylesheet" href="/content/ZZ/styles/mc2GLOBAL.css" />
   <div id="nav">
@@ -129,7 +130,7 @@
 	<li>What has been going well for you this week?</li>
 	<li>What has been difficult for you this past week?</li>
 	<li>What have you put into practice since our last meeting?</li>
-	<li>How have you experienced God working through your life this week?Were you able to:
+	<li>How have you experienced God working through your life this week? Were you able to:
 	<ul>
 		<li>tell anyone this week about what God is doing in your life?</li>
 		<li>share a Bible passage?</li>
@@ -138,6 +139,14 @@
 	</ul>
 	</li>
 </ul>
+
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note1Text" rows="5"></textarea>
+        </form>
+    </div>
 
 <h2 class="back">Caring for each other</h2>
 
@@ -159,9 +168,9 @@
 
 <h2 class="up">Read</h2>
 
-<p>Read or <a  target="_blank" href="https://www.jesusfilm.org/watch/jesus.html/resurrected-jesus-appears/english.html">watch</a> <strong>Luke 24:36-49</strong> two times as everyone listens</p>
+<p>Read or <a  target="_blank" href="https://api.arclight.org/videoPlayerUrl?refId=1_529-jf6159-0-0">watch</a> <strong>Luke 24:36-49</strong> two times as everyone listens</p>
 
-<div id="bible">
+<div class="bible_container">
 <div class="bible">
 <div class="bible"><sup>36&nbsp;</sup>While they were still talking about this, Jesus himself stood among them and said to them, &ldquo;Peace be with you.&rdquo;
 
@@ -191,6 +200,17 @@
 	</ul>
 	</li>
 	<li>Ask God what He wants you to do in response to the passage.</li>
+</ul>
+
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note2Text" rows="5"></textarea>
+        </form>
+    </div>
+
+<ul class="up">
 	<li>Share this with the group</li>
 </ul>
 
@@ -200,19 +220,25 @@
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
-<h2 class="up">Summary</h2>
+<div id="Summary0" class="summary"><h2>+ Summary</h2></div>
+<div class="collapsed" id ="Text0">
 
-<p>Jesus wants us to understand God&rsquo;s Word and what it teaches us about Him. Jesus&rsquo; life fulfilled the promises in God&rsquo;s Word. He wants us to tell others about what we learn.&nbsp;<br />
-Read 2 Timothy 3:16-17, Romans 10:17 and Hebrews 4:12 to highlight truths about God&rsquo;s Word.&nbsp;</p>
 
-<p><br />
-Reading the Bible each day is an important part of getting to know Jesus.&nbsp;</p>
+<p>Jesus wants us to understand God&rsquo;s Word and what it teaches us about Him. Jesus&rsquo; life fulfilled the promises in God&rsquo;s Word. He wants us to tell others about what we learn.&nbsp;</p>
+
+<p>Read <a class="bible-ref external-link"  target="_blank" href="https://www.biblegateway.com/passage/?version=LSG&search=2%20Timothy%203:16-17"> 2 Timothy 3:16-17 </a>, <a class="bible-ref external-link"  target="_blank" href="https://www.biblegateway.com/passage/?version=LSG&search=Romans%2010:17"> Romans 10:17 </a> and <a class="bible-ref external-link"  target="_blank" href="https://www.biblegateway.com/passage/?version=LSG&search=Hebrews%204:12"> Hebrews 4:12 </a> to highlight truths about God&rsquo;s Word.&nbsp;</p>
+
+<p>Reading the Bible each day is an important part of getting to know Jesus.&nbsp;</p>
+
+</div>
 
 <div class="lesson"><img class="lesson-icon" src="/images/arrowright3.png" />
 <div class="lesson-section forward">LOOK FORWARD</div>
 </div>
 
-<h2 class="forward">Preparing for Mission</h2>
+<div id="Summary1" class="summary"><h2>+ Preparing for Mission</h2></div>
+<div class="collapsed" id ="Text1">
+
 
 <p class="forward">Make a commitment to read at least one chapter from the Bible each day, beginning with the Gospel of John.&nbsp;</p>
 
@@ -236,13 +262,33 @@ Reading the Bible each day is an important part of getting to know Jesus.&nbsp;<
 	<li class="forward">Who can I help with this passage?</li>
 </ol>
 
+</div>
+
+<h2 class="forward">&nbsp;</h2>
+
+<ol start="5">
+</ol>
+
 <h2 class="forward">Going on the Mission&nbsp;</h2>
 
 <ul>
 	<li class="forward">What is God revealing as your next steps this week with him and others?</li>
+</ul>
+
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note3Text" rows="5"></textarea>
+        </form>
+    </div>
+
+<ul>
 	<li class="forward">Share this step with the group and ask someone to pray for you as you take this step in the power of the Holy Spirit.</li>
 	<li class="forward">Commit everyone&rsquo;s goals to the Lord. Ask the Lord to help us be faithful and use us to start a movement of people living the MyFriends Lifestyle.&nbsp;</li>
 </ul>
+
+<div><button class="action" onclick="sendAction('A2-eng-multiply1-multiply106.html', '' )" >Send Notes and Action Points</button></div>
 
   </p>
   <div class="version">
@@ -268,8 +314,10 @@ OTHER LANGUAGES <img class="languages" src="/content/ZZ/images/standard/OtherLan
 </div>
 
 </div>
-<!--- Created by prototypePage-->
-  <div class="login-note"><a href ="/content/login.html" target = "_blank" > Login</a></div>
+<form>
+<input type="hidden" name ="notes_page"  id ="notes_page" value="A2-eng-multiply1-multiply106.html">
+</form><!--- Created by prototypePage-->
+ 
       <!--- End Content -->
         <script src="/js/ShowMenu.js"></script>
         <script src="/js/app.js"></script>

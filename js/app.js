@@ -132,16 +132,13 @@ function findSummaries(){
 	for (i = 0; i < coll.length; i++) {
 		coll[i].addEventListener("click", function() {
 			this.classList.toggle("active");
-			var text = this.innerHTML;
-			var new_text = '';
-			if (this.classList.contains("active")){
-				// new_text = text.slice(0, -6) + '-</h2>';
-				new_text = '<h2>-' + text.substr(5);
-			}
-			else{
-			   // new_text = text.slice(0, -6) + '+</h2>';
-			   new_text = '<h2>+' + text.substr(5);
-			}
+      var text = this.innerHTML;
+      if (text.includes('+')){
+        var new_text = text.replace('+', '-');
+      }
+      else{
+        var new_text = text.replace('-', '+');
+      }
 			this.innerHTML = new_text;
 			var content = this.nextElementSibling;
 			if (content.style.display === "block") {

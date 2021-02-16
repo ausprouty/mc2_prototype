@@ -97,8 +97,9 @@
     <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
     <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
   </head>
-  <body id="app" class="container"  >
+  <body id="app" class="container"  onLoad= "showNotes('M2-eng-hope-hope01.html')"  >
 
+<!--- PrototypeOrpublish added onLoad -->
 <link rel="stylesheet" href="/content/ZZ/styles/cardGLOBAL.css" />
 <link rel="stylesheet" href="/content/ZZ/styles/mc2GLOBAL.css" />
   <div id="nav">
@@ -120,11 +121,13 @@
 </div>
 
 <div>
-<h2>1. Care:</h2>
+<h2>1. Caring for one another:</h2>
 
 <ul>
-	<li>Give them a chance to briefly share how they are doing and&nbsp;listen.</li>
-	<li>Pray for Jesus to meet the needs that are shared.</li>
+	<li>What has been a highlight this week?</li>
+	<li>What has been a challenge this week?</li>
+	<li>What do you want Jesus to do for you this week?</li>
+	<li>Briefly pray for&nbsp; Jesus to meet the needs that are shared.</li>
 </ul>
 
 <h2>2. Accountability:</h2>
@@ -134,21 +137,21 @@
 <div class="lesson-subtitle"><span class="up">LOOK UP</span></div>
 </div>
 
-<h2>3. Discover the Bible together:</h2>
+<h2>3. Discover the Bible together: Luke 7:36-50</h2>
+
+<p class="indent"><strong>Learn the Story</strong></p>
 
 <ul>
 	<li>Tell the story from memory</li>
 	<li>Retell the story together</li>
-	<li>Read the story together from the Bible</li>
+	<li>Read or watch the story from the Bible together.</li>
 </ul>
 
-<p>&nbsp;</p>
+<button id="Button0" type="button" class="collapsible bible">Read 
 
-<div class="bible_container">
-<p class="reference">Luke 7:36-50</p>
+Luke 7:36-50</button><div class="collapsed" id ="Text0">
 <!-- begin bible -->
 
-<div class="bible">
 <h3>Jesus Anointed by a Sinful Woman</h3>
 
 <p><sup class="versenum">36&nbsp;</sup>When one of the Pharisees invited Jesus to have dinner with him, he went to the Pharisee&rsquo;s house and reclined at the table.<sup class="versenum">37&nbsp;</sup>A woman in that town who lived a sinful life learned that Jesus was eating at the Pharisee&rsquo;s house, so she came there with an alabaster jar of perfume.<sup class="versenum">38&nbsp;</sup>As she stood behind him at his feet weeping, she began to wet his feet with her tears. Then she wiped them with her hair, kissed them and poured perfume on them.</p>
@@ -172,34 +175,48 @@
 <p><sup class="versenum">49&nbsp;</sup>The other guests began to say among themselves, &ldquo;Who is this who even forgives sins?&rdquo;</p>
 
 <p><sup class="versenum">50&nbsp;</sup>Jesus said to the woman, &ldquo;Your faith has saved you; go in peace.&rdquo;</p>
-</div>
 <!-- end bible -->
 
-<p class="bible"><a class="bible-readmore"  target="_blank" href="https://biblegateway.com/passage/?search=Luke%207:36-50&amp;version=NIV">Read More</a></p>
+<p class="bible"><a class="readmore"  target="_blank" href="https://biblegateway.com/passage/?search=Luke%207:36-50&amp;version=NIV">Read More</a></p>
+
 </div>
 
-<p>&nbsp;</p>
+<button id="ButtonWatch0" type="button" class="collapsible external-movie">Watch  
+Luke 7:36-50 online</button>
+    <div class="collapsed" id ="TextWatch">
+        <div class="arc-cont">
+            <iframe src="https://api.arclight.org/videoPlayerUrl?refId=6_529-GOLukeEnglish6021" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+        <style>.arc-cont{position:relative;display:block;margin:10px auto;width:100%}.arc-cont:after{padding-top:59%;display:block;content:""}.arc-cont>iframe{position:absolute;top:0;bottom:0;right:0;left:0;width:98%;height:98%;border:0}</style>
+        </div> 
+    </div>
+
+<p class="indent"><strong>Discuss the story together using:</strong></p>
 
 <ul>
-	<li>Discuss the story together using:
-	<ul>
-		<li>What do we learn about Jesus?</li>
-		<li>What do we learn about people?</li>
-		<li>Who do you most identify with and why?</li>
-		<li>Invite: Ask, &ldquo;What keeps you from following Jesus today?&rdquo;</li>
-	</ul>
-	</li>
+	<li>What caught your attention (or what did you like best) and why?</li>
+	<li>What do we learn about Jesus?</li>
+	<li>What do we learn about people?</li>
+	<li>Who do you most identify with in the sotry the most&nbsp; and why?</li>
+	<li>What keeps you from following Jesus today?</li>
 </ul>
+
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note1Text" rows="5"></textarea>
+        </form>
+    </div>
+
+<div class="lesson"><img class="lesson-icon" src="/content/M2/images/standard/mc2forward.png" />
+<div class="lesson-subtitle"><span class="forward">LOOK FORWARD</span></div>
+</div>
 
 <h2>4. Practice:</h2>
 
 <ul>
 	<li>Pair up and practice telling the story together</li>
 </ul>
-
-<div class="lesson"><img class="lesson-icon" src="/content/M2/images/standard/mc2forward.png" />
-<div class="lesson-subtitle"><span class="forward">LOOK FORWARD</span></div>
-</div>
 
 <h2>5. Set Goals:</h2>
 
@@ -208,7 +225,19 @@
 	<li>Who is someone in your life that you think needs to hear this story?</li>
 </ul>
 
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note2Text" rows="5"></textarea>
+        </form>
+    </div>
+
 <h2>6. Pray</h2>
+
+<ul>
+	<li>Thank God for the time together and ask God to help each one to know HIm better.</li>
+</ul>
 
   </p>
   <div class="version">
@@ -219,9 +248,8 @@
 <table class="social">
 	<tbody>
 		<tr>
-			<td class="social"><a href="mailto:globalchurchmovements@ccci.org"><img class="social" src="/content/M2/images/standard/Email.png" /></a></td>
-			<td class="social"><a href="javascript:void(0);" onclick="facebook(339218283324109)"><img class="social" src="/content/M2/images/standard/Facebook.png" /> </a></td>
-			<td class="social"><a href="javascript:void(0);" onclick="share()"><img class="social" src="/content/M2/images/standard/Share.png" /></a></td>
+			<td class="social"><a href="javascript:void(0);" onclick="sendAction('M2-eng-hope-hope01.html', 'Hope for the Rejected')"><img id = "sendAction" class="social hidden" src="/content/M2/images/standard/Notes.png" /></a></td>
+			<td class="social"><a href="javascript:void(0);" onclick="shareLesson('Here is the link to Hope for the Rejected')"><img class="social" src="/content/M2/images/standard/Share.png" /></a></td>
 		</tr>
 	</tbody>
 </table>
@@ -229,12 +257,13 @@
 <div class="footer">
 <p class="footer">MC2</p>
 
-<p class="footer"><a class="no_underline"  target="_blank" href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+<p class="footer"><a class="no_underline"    target="_blank" href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
 </div>
-
 </div>
-<!--- Created by prototypePage-->
-
+<form>
+<input type="hidden" name ="notes_page"  id ="notes_page" value="M2-eng-hope-hope01.html">
+</form><!--- Created by prototypePage-->
+  <div class="login-note"><a href ="/content/login.html" target = "_blank" > Login</a></div>
       <!--- End Content -->
         <script src="/js/ShowMenu.js"></script>
         <script src="/js/app.js"></script>

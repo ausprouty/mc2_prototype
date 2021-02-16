@@ -117,12 +117,23 @@
   <!-- ready for offline --->
   <p class="ltr" id="offline-ready">Ready for offline use</p>
   <!-- title --->
-  <h2>Stories of Hope</h2>
+  <!-- <h2>Stories of Hope</h2> --->
   <div>These stories allow a group to have a safe place to explore questions about life and God. Some are not yet ready to make a decision to receive Christ as personal Savior, but are interested in spiritual issues and want to explore more. These stories give hope.</div>
   <br />
   <br />
   <!-- chapters --->
   <div class="app-link">
+  <a class="card-link" href="hope00.html">
+    <div class="app-card -shadow">
+      <div class="chapter">
+        <div class="chapter-image">
+          <img src="/content/M2/eng/hope/Stories of HopeB.png" />
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="app-link">
   <a class="card-link" href="hope01.html">
     <div class="app-card -shadow">
       <div class="chapter ltr "">
@@ -237,9 +248,8 @@
 <table class="social">
 	<tbody>
 		<tr>
-			<td class="social"><a href="mailto:globalchurchmovements@ccci.org"><img class="social" src="/content/M2/images/standard/Email.png" /></a></td>
-			<td class="social"><a href="javascript:void(0);" onclick="facebook(339218283324109)"><img class="social" src="/content/M2/images/standard/Facebook.png" /> </a></td>
-			<td class="social"><a href="javascript:void(0);" onclick="share()"><img class="social" src="/content/M2/images/standard/Share.png" /></a></td>
+			<td class="social"><a href="javascript:void(0);" onclick="sendAction('', 'Stories of Hope')"><img id = "sendAction" class="social hidden" src="/content/M2/images/standard/Notes.png" /></a></td>
+			<td class="social"><a href="javascript:void(0);" onclick="shareLesson('Here is the link to Stories of Hope')"><img class="social" src="/content/M2/images/standard/Share.png" /></a></td>
 		</tr>
 	</tbody>
 </table>
@@ -247,12 +257,11 @@
 <div class="footer">
 <p class="footer">MC2</p>
 
-<p class="footer"><a class="no_underline" href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+<p class="footer"><a class="no_underline"  target="_blank" href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
 </div>
-
 </div>
 <!--- Created by prototypeSeries-->
-
+  <div class="login-note"><a href ="/content/login.html" target = "_blank" > Login</a></div>
       <!--- End Content -->
         <script src="/js/ShowMenu.js"></script>
         <script src="/js/app.js"></script>

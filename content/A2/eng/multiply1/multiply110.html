@@ -97,8 +97,9 @@
     <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
     <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
   </head>
-  <body id="app" class="container"  >
+  <body id="app" class="container"  onLoad= "showNotes('A2-eng-multiply1-multiply110.html')"  >
 
+<!--- PrototypeOrpublish added onLoad -->
 <link rel="stylesheet" href="/content/ZZ/styles/cardGLOBAL.css" />
 <link rel="stylesheet" href="/content/ZZ/styles/mc2GLOBAL.css" />
   <div id="nav">
@@ -121,7 +122,7 @@
 
 <h2 class="back">Praise</h2>
 
-<p class="back">Read Romans 11:33-36 and sing 1-2 songs.</p>
+<p class="back">Read <a class="bible-ref external-link"  target="_blank" href="https://www.biblegateway.com/passage/?version=LSG&search=Romans%2011:33-36"> Romans 11:33-36 </a> and sing 1-2 songs.</p>
 
 <h2 class="back">Celebrating God&rsquo;s Faithfulness</h2>
 
@@ -129,7 +130,7 @@
 	<li>What has been going well for you this week?</li>
 	<li>What has been difficult for you this past week?</li>
 	<li>What have you put into practice since our last meeting?</li>
-	<li>How have you experienced God working through your life this week?Were you able to:
+	<li>How have you experienced God working through your life this week? Were you able to:
 	<ul>
 		<li>tell anyone this week about what God is doing in your life?</li>
 		<li>share a Bible passage?</li>
@@ -138,6 +139,14 @@
 	</ul>
 	</li>
 </ul>
+
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note1Text" rows="5"></textarea>
+        </form>
+    </div>
 
 <h2 class="back">Caring for each other</h2>
 
@@ -161,7 +170,7 @@
 
 <p>Read or watch <strong>Luke 5:27-32 </strong> two times as everyone listens</p>
 
-<div id="bible">
+<div class="bible_container">
 <div class="bible">
 <div class="bible"><sup>27&nbsp;</sup>After this, Jesus went out and saw a tax collector by the name of Levi sitting at his tax booth. &ldquo;Follow me,&rdquo; Jesus said to him,<sup class="versenum">28&nbsp;</sup>and Levi got up, left everything and followed him.
 
@@ -187,6 +196,17 @@
 	</ul>
 	</li>
 	<li>Ask God what He wants you to do in response to the passage.</li>
+</ul>
+
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note2Text" rows="5"></textarea>
+        </form>
+    </div>
+
+<ul class="up">
 	<li>Share this with the group</li>
 </ul>
 
@@ -196,17 +216,23 @@
 	<li>Read the story again. Have someone tell the story and ask the group to correct if necessary.</li>
 </ul>
 
-<h2 class="up">Summary</h2>
+<div id="Summary0" class="summary"><h2>+ Summary</h2></div>
+<div class="collapsed" id ="Text0">
 
-<p class="up">Read Luke 10:1-11. Jesus sent out his followers to do the same things he had been doing: praying for people, caring for their needs and sharing about the Kingdom. This can be summarized as Prayer, Care, Share. He multiplied himself by training and sending out new workers. The Person of Peace is a God- prepared person who will receive you and your message. Through their relationships, they open new networks of people to the gospel.&nbsp;</p>
 
-<p class="up">For further enrichment: Study the following Persons of Peace and discuss with another group member: Luke 19:1-10, Mark 5:14-20, John 4:1-42, Acts 16:13-15&nbsp;</p>
+<p class="up">Read <a class="bible-ref external-link"  target="_blank" href="https://www.biblegateway.com/passage/?version=LSG&search=Luke%2010:1-11"> Luke 10:1-11 </a>. Jesus sent out his followers to do the same things he had been doing: praying for people, caring for their needs and sharing about the Kingdom. This can be summarized as Prayer, Care, Share. He multiplied himself by training and sending out new workers. The Person of Peace is a God- prepared person who will receive you and your message. Through their relationships, they open new networks of people to the gospel.&nbsp;</p>
+
+</div>
+
+<p class="up"><span class="for-enrichment">For further enrichment: Study the following Persons of Peace and discuss with another group member: <a class="bible-ref external-link"  target="_blank" href="https://www.biblegateway.com/passage/?version=LSG&search=Luke%2019:1-10"> Luke 19:1-10 </a>, <a class="bible-ref external-link"  target="_blank" href="https://www.biblegateway.com/passage/?version=LSG&search=Mark%205:14-20"> Mark 5:14-20 </a>, <a class="bible-ref external-link"  target="_blank" href="https://www.biblegateway.com/passage/?version=LSG&search=John%204:1-42"> John 4:1-42 </a>, <a class="bible-ref external-link"  target="_blank" href="https://www.biblegateway.com/passage/?version=LSG&search=Acts%2016:13-15&nbsp;"> Acts 16:13-15&nbsp; </a></span></p>
 
 <div class="lesson"><img class="lesson-icon" src="/images/arrowright3.png" />
 <div class="lesson-section forward">LOOK FORWARD</div>
 </div>
 
-<h2 class="forward">Preparing for Mission</h2>
+<div id="Summary1" class="summary"><h2>+ Preparing for Mission</h2></div>
+<div class="collapsed" id ="Text1">
+
 
 <p class="forward">Some people are ready to respond to the Gospel the first time you meet them. Practise sharing a Gospel presentation until you are comfortable with it. Here are some suggestions:</p>
 
@@ -236,13 +262,33 @@
 	<li class="forward"><a  target="_blank" href="https://hereslife.com/app/4sl">Bi-lingual Four Spiritual Laws </a>- Power to Change</li>
 </ul>
 
+</div>
+
+<p class="forward">&nbsp;</p>
+
+<ul>
+</ul>
+
 <h2 class="forward">Going on the Mission&nbsp;</h2>
 
 <ul>
 	<li class="forward">What is God revealing as your next steps this week with him and others?</li>
+</ul>
+
+
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note3Text" rows="5"></textarea>
+        </form>
+    </div>
+
+<ul>
 	<li class="forward">Share this step with the group and ask someone to pray for you as you take this step in the power of the Holy Spirit.</li>
 	<li class="forward">Commit everyone&rsquo;s goals to the Lord. Ask the Lord to help us be faithful and use us to start a movement of people living the MyFriends Lifestyle.&nbsp;</li>
 </ul>
+
+<div><button class="action" onclick="sendAction('A2-eng-multiply1-multiply110.html', '' )" >Send Notes and Action Points</button></div>
 
   </p>
   <div class="version">
@@ -268,8 +314,10 @@ OTHER LANGUAGES <img class="languages" src="/content/ZZ/images/standard/OtherLan
 </div>
 
 </div>
-<!--- Created by prototypePage-->
-  <div class="login-note"><a href ="/content/login.html" target = "_blank" > Login</a></div>
+<form>
+<input type="hidden" name ="notes_page"  id ="notes_page" value="A2-eng-multiply1-multiply110.html">
+</form><!--- Created by prototypePage-->
+ 
       <!--- End Content -->
         <script src="/js/ShowMenu.js"></script>
         <script src="/js/app.js"></script>

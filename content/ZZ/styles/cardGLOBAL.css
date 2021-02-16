@@ -6,6 +6,12 @@
   transition: all 0.2s linear;
   cursor: pointer;
 }
+div.app-link.language {
+  height: 100px;
+}
+div.shadow-card.language{
+  height:60px;
+}
 .app-card.notpublished {
   background-color: #ff0;
 }
@@ -62,8 +68,7 @@ div.card-language {
   margin-left: 12px;
   padding: 10px;
   width: 50%;
-  background-color: #007A9A
-;
+  background-color: red;
   text-align: left;
   color: white;
   margin-bottom: 5px;
@@ -114,9 +119,9 @@ div.chapter-title {
   color: black;
 }
 div.chapter-description {
-  font-size: 12 pt;
+  font-size: 12pt;
   font-weight: normal;
-  margin-right: 10 px;
+  margin-right: 10px;
   color: gray;
   margin-top: 20px;
 }

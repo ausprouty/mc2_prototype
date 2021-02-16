@@ -97,8 +97,9 @@
     <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
     <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
   </head>
-  <body id="app" class="container"  >
+  <body id="app" class="container"  onLoad= "showNotes('A2-eng-mc2-mc203.html')"  >
 
+<!--- PrototypeOrpublish added onLoad -->
 <link rel="stylesheet" href="/content/ZZ/styles/cardGLOBAL.css" />
 <link rel="stylesheet" href="/content/ZZ/styles/mc2GLOBAL.css" />
   <div id="nav">
@@ -116,14 +117,20 @@
                     </div>
   <p>
     <div dir="ltr" id="mycontent">
-<p>The MyFriends Lifestyle&nbsp; helps you and your friends builds stronger bonds with each other and with God.</p>
+<p>The MyFriends Lifestyle&nbsp; helps you and your non-Christian friends builds stronger bonds with each other around God&#39;s story.</p>
 
-<p><a  target="_blank" href="https://player.vimeo.com/video/414666303"><img alt="" src="/content/A2/eng/mc2/GatheringMyFriends.png" /></a></p>
-&nbsp;
+<button id="ButtonWatch0" type="button" class="collapsible external-movie">Watch  
+Gathering MyFriends  online</button>
+    <div class="collapsed" id ="TextWatch">
+        <div class="arc-cont">
+            <iframe src="https://player.vimeo.com/video/414666303" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+        <style>.arc-cont{position:relative;display:block;margin:10px auto;width:100%}.arc-cont:after{padding-top:59%;display:block;content:""}.arc-cont>iframe{position:absolute;top:0;bottom:0;right:0;left:0;width:98%;height:98%;border:0}</style>
+        </div> 
+    </div>
 
-<button id="Button0" type="button" class="collapsible">
+<div id="Summary0" class="summary"><h2>+ The MyFriends Lifestyle involves:</h2></div>
+<div class="collapsed" id ="Text0">
 
-The MyFriends Lifestyle involves:</button><div class="collapsed" id ="Text0">
 
 <ol>
 	<li><strong>Caring</strong> about your friends. Get to know what is really going on in your friend&#39;s world. This involves moving beyond &quot;How are you?&quot; and knowing the answer to &quot;How are you really?&quot;<br />
@@ -165,19 +172,49 @@ The MyFriends Lifestyle involves:</button><div class="collapsed" id ="Text0">
 
 <p>It takes 6-12 months for most people to consistantly live the MyFriends Lifestyle.</p>
 
-<button id="Button1" type="button" class="collapsible">
+<p>Many Christians&nbsp;need to expand their social circle so that they are meeting regularly(at least every two weeks)&nbsp; with the same non-Christians.</p>
 
-The first step</button><div class="collapsed" id ="Text1">
+<p>What are some possible groups you can join?</p>
 
-<p>Review your Daisy Chart and begin praying for people.</p>
 
-<p><a  target="_blank" href="https://vimeo.com/415015909"><img alt="" src="/content/A2/eng/mc2/Step1-Pray.png" /></a></p>
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note1Text" rows="5"></textarea>
+        </form>
+    </div>
+
+<p>&nbsp;</p>
+
+<div id="Summary1" class="summary"><h2>+ The first step</h2></div>
+<div class="collapsed" id ="Text1">
+
+
+<button id="ButtonWatch1" type="button" class="collapsible external-movie">Watch  
+Step 1  online</button>
+    <div class="collapsed" id ="TextWatch">
+        <div class="arc-cont">
+            <iframe src="https://player.vimeo.com/video/415015909" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+        <style>.arc-cont{position:relative;display:block;margin:10px auto;width:100%}.arc-cont:after{padding-top:59%;display:block;content:""}.arc-cont>iframe{position:absolute;top:0;bottom:0;right:0;left:0;width:98%;height:98%;border:0}</style>
+        </div> 
+    </div>
+Review your Daisy Chart and ask God where you should concentrate your prayers.&nbsp; Is there a specific message or need He tells you about?
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
 
 </div>
 
-<p>&nbsp;</p>
 
-<p>&nbsp;</p>
+    <div class="note-div">
+        <form class = "auto_submit_item">
+            Notes: (click outside box to save)<br>
+            <textarea  onchange= "addNote()"  id ="note2Text" rows="5"></textarea>
+        </form>
+    </div>
+
+<div><button class="action" onclick="sendAction('A2-eng-mc2-mc203.html', 'The MyFriends Lifestyle' )" >Send Notes and Action Points</button></div>
 
 <p>&nbsp;</p>
 
@@ -208,26 +245,10 @@ OTHER LANGUAGES <img class="languages" src="/content/ZZ/images/standard/OtherLan
 </div>
 
 </div>
-
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-                this.className= "collapsible";
-            } else {
-                content.style.display = "block";
-                this.className= "revealed";
-            }
-           
-        });
-        }
-    </script><!--- Created by prototypePage-->
-  <div class="login-note"><a href ="/content/login.html" target = "_blank" > Login</a></div>
+<form>
+<input type="hidden" name ="notes_page"  id ="notes_page" value="A2-eng-mc2-mc203.html">
+</form><!--- Created by prototypePage-->
+ 
       <!--- End Content -->
         <script src="/js/ShowMenu.js"></script>
         <script src="/js/app.js"></script>

@@ -22,9 +22,10 @@
         'ga'
       )
 
-      ga('create', 'UA-51760034-6', 'auto')
+      ga('create', 'UA-121884561-1', 'auto')
       ga('send', 'pageview')
     </script>
+    <title>MC2: COUNTRY INDEX</title>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -93,61 +94,52 @@
     />
     <meta name="msapplication-TileColor" content="#fff" />
     <meta name="theme-color" content="#F2F5F8" />
-    <link href="/content/ZZ/styles/appGLOBAL.css" rel="stylesheet" />
-    <link href="/content/ZZ/styles/mc2GLOBAL.css" rel="stylesheet" />
-    <link href="/content/ZZ/styles/cardGLOBAL.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/content/ZZ/styles/appGLOBAL.css" />
+    <link rel="stylesheet" href="/content/ZZ/styles/mc2GLOBAL.css" />
+    <link rel="stylesheet" href="/content/ZZ/styles/cardGLOBAL.css" />
   </head>
-  <body id="app" class="container"  >
+  <body id="app" class="container" >
 
 <div id="nav">
-  <img class="nav-icon" alt="Home" src="/images/menu/header-front.png" />
+  <a href="/content/index.html">
+    <img class="nav-icon" alt="Home" src="/images/menu/header-front.png" />
+  </a>
 </div>
 <div class="content">
-  <img src="/images/country/world.jpg" class="app-img-header" />
-  <h1 class="list_header">Select Country</h1>
-  <div class="app-link">
-  <a class="card-link" href="/content/M2/languages.html">
-    <div class="shadow-card -shadow">
-      <img src="/images/country/M2.png" class="book" />
-      <div class="card-names">
-        <span class="card-name">MC2</span>
-        <br />
-        <span class="card-name-english">MC2</span>
+  <div class="app-link language">
+    <a class="card-link" href="/content/M2/eng">
+    <div class="shadow-card language -shadow">
+      <div class="book">
+        <span class="title">English</span>
       </div>
     </div>
-  </a>
-</div>
-<div class="app-link">
-  <a class="card-link" href="/content/A2/eng/index.html">
-    <div class="shadow-card -shadow">
-      <img src="/images/country/A2.png" class="book" />
-      <div class="card-names">
-        <span class="card-name">Australia</span>
-        <br />
-        <span class="card-name-english">Australia</span>
-      </div>
-    </div>
-  </a>
-</div>
-<div class="app-link">
-  <a class="card-link" href="/content/HD/languages.html">
-    <div class="shadow-card -shadow">
-      <img src="/images/country/HD.jpg" class="book" />
-      <div class="card-names">
-        <span class="card-name">Help Desk</span>
-        <br />
-        <span class="card-name-english">Help Desk</span>
-      </div>
-    </div>
-  </a>
-</div>
-
-  <div class="version">
-    <p class="version">Version 1.05</p>
+    </a>
   </div>
+  <div>
+    <a class="card-link" href="/content/M2/fra">
+    <div class="shadow-card language -shadow">
+      <div class="book">
+        <span class="title">Française</span>
+      </div>
+    </div>
+    </a>
+  </div>
+	<div>
+    <a class="card-link" href="/content/M2/cmn">
+    <div class="shadow-card language -shadow">
+      <div class="book">
+        <span class="title">简体中文</span>
+      </div>
+    </div>
+    </a>
+  </div>
+
+ <script src="/js/clearCache.js"></script>
+  <p style="text-align:right"><a href = "javascript:clearCaches();"> Clear Storage</a></p>
+
 </div>
-<!--- Created by prototypeCountries-->
-  <div class="login-note"><a href ="/content/login.html" target = "_blank" > Login</a></div>
+<!--- Created by publishLanguagesAvailable-->
+
       <!--- End Content -->
         <script src="/js/ShowMenu.js"></script>
         <script src="/js/app.js"></script>

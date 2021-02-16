@@ -176,7 +176,7 @@
 
 <h2>What is your vision? (15 minutes)</h2>
 
-<p><span>Have participants get into groups of 3-4 people, introduce themselves and discuss the following: </span></p>
+<p><span>Get into groups of 3-4 people, introduce yourselves and discuss the following: </span></p>
 
 <p>What would it look like if all the people in your community wanted God&#39;s will to be done on earth as it is in heaven?</p>
 
@@ -215,9 +215,9 @@
 
 <p>&nbsp;</p>
 
-<button id="Button0" type="button" class="collapsible">
+<div id="Summary0" class="summary"><h2>+ The Gap</h2></div>
+<div class="collapsed" id ="Text0">
 
-The Gap</button><div class="collapsed" id ="Text0">
 <img alt="Begin with Why" src="/content/A2/eng/mc2/BeginWithWhy.png" style="height:441px; width:600px" />
 </div>
 
@@ -237,11 +237,11 @@ The Gap</button><div class="collapsed" id ="Text0">
 
 <p>&nbsp;</p>
 
-<button id="Button1" type="button" class="collapsible">
+<div id="Summary1" class="summary"><h2>+ Nehemiah&rsquo;s Prayer</h2></div>
+<div class="collapsed" id ="Text1">
 
-Nehemiah&rsquo;s Prayer
 
-1:1 The words of Nehemiah son of Hakaliah:</button><div class="collapsed" id ="Text1">
+<p><sup class="versenum">1:1 </sup>The words of Nehemiah son of Hakaliah:</p>
 
 <p>In the month of Kislev in the twentieth year, while I was in the citadel of Susa,<sup class="versenum">2&nbsp;</sup>Hanani, one of my brothers, came from Judah with some other men, and I questioned them about the Jewish remnant that had survived the exile, and also about Jerusalem.</p>
 
@@ -285,9 +285,9 @@ Nehemiah&rsquo;s Prayer
 <div class="lesson-subtitle"><span class="forward">LOOKING FORWARD</span></div>
 </div>
 
-<button id="Button2" type="button" class="collapsible">
+<div id="Summary2" class="summary"><h2>+ Before our next session</h2></div>
+<div class="collapsed" id ="Text2">
 
-Before our next session</button><div class="collapsed" id ="Text2">
 
 <p>1) What is a good way for you to capture your vision, the current reality and the gap?&nbsp; Is it a:</p>
 
@@ -318,7 +318,7 @@ Before our next session</button><div class="collapsed" id ="Text2">
         </form>
     </div>
 
-<div><button class="action">Send Notes and Action Points</button></div>
+<div><button class="action" onclick="sendAction('A2-eng-mc2-mc201.html', 'Your Kingdom Come' )" >Send Notes and Action Points</button></div>
 
   </p>
   <div class="version">
@@ -346,26 +346,8 @@ OTHER LANGUAGES <img class="languages" src="/content/ZZ/images/standard/OtherLan
 </div>
 <form>
 <input type="hidden" name ="notes_page"  id ="notes_page" value="A2-eng-mc2-mc201.html">
-</form>
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-                this.className= "collapsible";
-            } else {
-                content.style.display = "block";
-                this.className= "revealed";
-            }
-           
-        });
-        }
-    </script><!--- Created by prototypePage-->
-  <div class="login-note"><a href ="/content/login.html" target = "_blank" > Login</a></div>
+</form><!--- Created by prototypePage-->
+ 
       <!--- End Content -->
         <script src="/js/ShowMenu.js"></script>
         <script src="/js/app.js"></script>

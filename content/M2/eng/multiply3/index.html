@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ language.google }}">
+<html lang="en">
   <head>
     <script>
       ;(function(i, s, o, g, r, a, m) {
@@ -115,9 +115,9 @@
     <img src="/content/M2/images/standard/Multiply3.png" class="app-series-header" />
   </div>
   <!-- ready for offline --->
-  <p class="ltr" id="offline-ready">Ready for Offline Use</p>
+  <p class="ltr" id="offline-ready">Ready for offline use</p>
   <!-- title --->
-  <h2>Sent by Jesus</h2>
+  <!-- <h2>Sent by Jesus</h2> --->
   <div>This is the story of Acts.  It captures for us the movement of the Spirit of God establishing and expanding the Kingdom to all peoples as His disciples began to live out the Spirit-dependent life they were taught.  It also provides the movement context that helps us apply the rest of the New Testament letters to the mission of Jesus.  Through a period of only 30 years, a foundation for the expansion of the Kingdom was laid, which was marked by its impact on society and the development of new disciples and new churches everywhere.</div>
   <br />
   <br />
@@ -921,9 +921,21 @@
 <table class="social">
 	<tbody>
 		<tr>
-			<td class="social"><a href="mailto:globalchurchmovements@ccci.org"><img class="social" src="/content/M2/images/standard/Email.png" /></a></td>
-			<td class="social"><a href="javascript:void(0);" onclick="facebook(339218283324109)"><img class="social" src="/content/M2/images/standard/Facebook.png" /> </a></td>
-			<td class="social"><a href="javascript:void(0);" onclick="share()"><img class="social" src="/content/M2/images/standard/Share.png" /></a></td>
+			<td class="social">
+				<a href="/content/index.html">
+				  <img class="social" src="/images/menu/languages.png" />
+				</a>
+			  </td>
+			<td class="social">
+				<a href="javascript:void(0);" onclick="sendAction('', 'Sent by Jesus')">
+					<img id = "sendAction" class="social hidden" src="/content/M2/images/standard/Notes.png" />
+				</a>
+			</td>
+			<td class="social">
+				<a href="javascript:void(0);" onclick="shareLesson('Here is the link to Sent by Jesus')">
+					<img class="social" src="/content/M2/images/standard/Share.png" />
+				</a>
+			</td>
 		</tr>
 	</tbody>
 </table>
@@ -931,12 +943,11 @@
 <div class="footer">
 <p class="footer">MC2</p>
 
-<p class="footer"><a class="no_underline" href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
+<p class="footer"><a class="no_underline"  target="_blank" href="https://GlobalChurchMovements.org">GlobalChurchMovements.org</a></p>
 </div>
-
 </div>
 <!--- Created by prototypeSeries-->
-
+ 
       <!--- End Content -->
         <script src="/js/ShowMenu.js"></script>
         <script src="/js/app.js"></script>
