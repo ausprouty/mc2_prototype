@@ -1,0 +1,140 @@
+
+
+{
+    "default": "english",
+    "alternative": {
+        "english": "Do you want to watch a video in Mandarin if we do not have the video in your prefered language?",
+        "simplified": "如果我们没有您喜欢的语言的视频，您想看普通话的视频吗？ ",
+        "traditional": "如果我們沒有您喜歡的語言的視頻，您想看普通話的視頻嗎？ "
+    },
+    "save": {
+        "english": "Save",
+        "simplified": "救  ",
+        "traditional": "救"
+    },
+    "select": {
+        "english": "Prefered language for videos",
+        "simplified": "视频的首选语言 ",
+        "traditional": "視頻的首選語言 "
+    },
+    "change": {
+        "english": "Change language for videos",
+        "simplified": "更改视频语言 ",
+        "traditional": "更改視頻語言 "
+    },
+    "yes": {
+        "english": "Yes",
+        "simplified": "是的 ",
+        "traditional": "是的 "
+    },
+    "no": {
+        "english": "No",
+        "simplified": "不  ",
+        "traditional": "不 "
+    },
+    
+    "languages": [
+        {
+            "jfilm": "20601",
+            "english": "Cantonese",
+            "simplified": "广东话",
+            "traditional": "廣東話"
+        },
+        {
+            "jfilm": "23033",
+            "english": "Foochow",
+            "simplified": "福州",
+            "traditional": "福州"
+        },
+        {
+            "jfilm": "53352",
+            "english": "Guiliu",
+            "simplified": "桂柳",
+            "traditional": "桂柳"
+        },
+        {
+            "jfilm": "13192",
+            "english": "Hainanese",
+            "simplified": "海南人",
+            "traditional": "海南人"
+        },
+        {
+            "jfilm": "20611",
+            "english": "Hakka",
+            "simplified": "客家话",
+            "traditional": "客家話"
+        },
+        {
+            "jfilm": "21211",
+            "english": "Hui",
+            "simplified": "惠",
+            "traditional": "惠"
+        },
+        {
+            "jfilm": "20615",
+            "english": "Mandarin",
+            "simplified": "普通话",
+            "traditional": "普通話"
+        },
+        {
+            "jfilm": "24096",
+            "english": "Qinghai",
+            "simplified": "青海",
+            "traditional": "青海"
+        },
+        {
+            "jfilm": "20623",
+            "english": "Shanghainese",
+            "simplified": "上海人",
+            "traditional": "上海人"
+        },
+        {
+            "jfilm": "23062",
+            "english": "Sichuan",
+            "simplified": "四川省",
+            "traditional": "四川省"
+        },
+        {
+            "jfilm": "23221",
+            "english": "Taiwanese Mandarin",
+            "simplified": "台湾普通话",
+            "traditional": "台灣普通話"
+        },
+        {
+            "jfilm": "23075",
+            "english": "Teochew",
+            "simplified": "潮州",
+            "traditional": "潮州"
+        },
+        {
+            "jfilm": "20627",
+            "english": "Xiang",
+            "simplified": "翔",
+            "traditional": "翔"
+        },
+        {
+            "jfilm": "23061",
+            "english": "Yunnan (Kunming)",
+            "simplified": "云南（昆明）",
+            "traditional": "雲南（昆明）"
+        },
+        {
+            "jfilm": "410",
+            "english": "Uyghur",
+            "simplified": "维吾尔族",
+            "traditional": "維吾爾族"
+        },
+        {
+            "jfilm": "21795",
+            "english": "Lhasa",
+            "simplified": "拉萨",
+            "traditional": "拉薩"
+        },
+        {
+            "jfilm": "23089",
+            "english": "Amdo",
+            "simplified": "安多 ",
+            "traditional": "安多 "
+        }
+    ]
+}
