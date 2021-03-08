@@ -1,11 +1,11 @@
 
-function findVideos(){
+function mc2FindVideos(){
 	var coll = document.getElementsByClassName("external-movie");
 	var i;
 	for (i = 0; i < coll.length; i++) {
     var c = coll[i].nextElementSibling;
     var vid = c.innerHTML;
-    if (videoShouldBeShown(vid)) {
+    if (mc2VideoShouldBeShown(vid)) {
       coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
@@ -17,7 +17,7 @@ function findVideos(){
           // modify content
           var video = content.innerHTML;
           if (!video.match(/<iframe/g)){
-            var iframe =  createIframeArclight(video);
+            var iframe =  mc2CreateIframeArclight(video);
             content.innerHTML = iframe;
           }
           content.style.display = "block";
@@ -32,12 +32,12 @@ function findVideos(){
     }
 	}
 }
-function videoShouldBeShown(video){
-  var shown =  findLanguageCodeForVideo(video);
+function mc2VideoShouldBeShown(video){
+  var shown =  mc2FindLanguageCodeForVideo(video);
   return shown;
 
 }
-function createIframeArclight(video){
+function mc2CreateIframeArclight(video){
   var language = window.localStorage.getItem("mc2InterfaceLanguage","english" );
   var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
   var change_language = data.change_language[language];
@@ -47,30 +47,30 @@ function createIframeArclight(video){
   </div>
   <div id="Change[video]" class="changeLanguage" onClick="changeVideoLanguage('Change[video]')"> [ChangeLanguage] </div>
   `; 
-  var video = findLanguageCodeForVideo(video);
+  var video = mc2FindLanguageCodeForVideo(video);
   var temp = template.replaceAll("[video]", video);
   var iframe = temp.replace("[ChangeLanguage]", change_language);
   return iframe;
 }
-function findLanguageCodeForVideo(video){
+function mc2FindLanguageCodeForVideo(video){
   var yourVideo = null;
   var languageCode = null;
   if (video.match(/\[acts\]/g)){
-    languageCode = getLanguageCodeForVideo('acts');
+    languageCode = mc2GetLanguageCodeForVideo('acts');
     if (languageCode){
       yourVideo = video.replace('[acts]', languageCode);
     }
     return yourVideo;
   }
   if (video.match(/\[jfilm\]/g)){
-    languageCode = getLanguageCodeForVideo('jfilm');
+    languageCode = mc2GetLanguageCodeForVideo('jfilm');
     if (languageCode){
       yourVideo = video.replace('[jfilm]', languageCode);
     }
     return yourVideo;
   }
   if (video.match(/\[lumo\]/g)){
-    languageCode = getLanguageCodeForVideo('lumo');
+    languageCode = mc2GetLanguageCodeForVideo('lumo');
     if (languageCode){
       yourVideo = video.replace('[lumo]', languageCode);
     }
@@ -78,7 +78,7 @@ function findLanguageCodeForVideo(video){
     //todo: also need to replace English
   }
   if (video.match(/\[vimeo\]/g)){
-    languageCode = getLanguageCodeForVideo('vimeo');
+    languageCode = mc2GetLanguageCodeForVideo('vimeo');
     if (languageCode){
       yourVideo = video.replace('[vimeo]', languageCode);
     }
@@ -87,22 +87,22 @@ function findLanguageCodeForVideo(video){
   return yourVideo;
 
 }
-function getLanguageCodeForVideo(video_code){
+function mc2GetLanguageCodeForVideo(video_code){
   var language = window.localStorage.getItem("mc2PrimaryAudioLanguage","English" );
-  var code = languageCodeForVideo (language, video_code);
+  var code = mc2LanguageCodeForVideo (language, video_code);
  
   if (!code){
     language = window.localStorage.getItem("mc2AlternativeAudioLanguage","English" );
-    code = languageCodeForVideo (language, video_code);
+    code = mc2LanguageCodeForVideo (language, video_code);
   }
   if (!code){
     language = "English";
-    code = languageCodeForVideo (language, video_code);
+    code = mc2LanguageCodeForVideo (language, video_code);
   }
   return code;
 
 }
-function languageCodeForVideo (language, video_code){
+function mc2LanguageCodeForVideo (language, video_code){
   var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
   for (var i = 0; i < data.languages.length; i++){
     if (data.languages[i].english == language){
@@ -118,11 +118,11 @@ function languageCodeForVideo (language, video_code){
   
 
 }
-function changeVideoLanguage(div){
-  displayPrimaryAudioOptions(div);
+function mc2ChangeVideoLanguage(div){
+  mc2DisplayPrimaryAudioOptions(div);
 }
 
-async function displayPrimaryAudioOptions(div){
+async function mc2DisplayPrimaryAudioOptions(div){
   var language = getInterfaceLanguage();
   var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
   console.log (data);
@@ -150,21 +150,21 @@ async function displayPrimaryAudioOptions(div){
 
 };
 
-function savePrimaryAudioOption(){
+function mc2SavePrimaryAudioOption(){
 	var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
     var audioOption = document.getElementById("audio_options").value;
 	window.localStorage.setItem("mc2PrimaryAudioLanguage", audioOption);
 	var div = document.getElementById("audio_div").value;
 
     if( audioOption != data.default_audio_language){
-		displayAlternativeAudioOption(div);
+		mc2DisplayAlternativeAudioOption(div);
 	}
 	else{
 		 window.localStorage.removeItem("mc2AlternativeAudioLanguage");
-		 changeVideosDisplayed();
+		 mc2ChangeVideosDisplayed();
 	}
 }
-function displayAlternativeAudioOption(div){
+function mc2DisplayAlternativeAudioOption(div){
 	var language = getInterfaceLanguage();
   var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
 	var form_text = '<div class="alert"><form onsubmit="saveAlternateAudioOption();">' + "\n";
@@ -183,7 +183,7 @@ function displayAlternativeAudioOption(div){
 	document.getElementById(div).innerHTML =  message;
 	
 }
-function saveAlternateAudioOption(){
+function mc2SaveAlternateAudioOption(){
     if (document.getElementById("yes").checked){
 		var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
         window.localStorage.setItem("mc2AlternativeAudioLanguage", data.default_audio_language);
@@ -192,6 +192,5 @@ function saveAlternateAudioOption(){
         window.localStorage.removeItem("mc2AlternativeAudioLanguage");
     }
 	var div = document.getElementById("audio_div").value;
-    changeVideosDisplayed();
+    mc2ChangeVideosDisplayed();
 }
-
