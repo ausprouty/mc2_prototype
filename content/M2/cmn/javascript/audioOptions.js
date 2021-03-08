@@ -38,77 +38,8 @@ function getInterfaceLanguage(){
         return DEFAULT_INTERFACE_LANGUAGE;
     }
 }
-async function displayPrimaryAudioOptions(div){
-    var language = getInterfaceLanguage();
-    var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
-	console.log (data);
-	// select language
-	var title_text = '<div class="alert"><form onsubmit="savePrimaryAudioOption();">' + "\n" + '<h3>' + data.select_language[language] + '</h3>'+ "\n";
-	var select_text = '<select name="audio_options" id="audio_options">'+ "\n";
-	var options = data.languages;
-	var length = data.languages.length;
-	var option_text = '';
-	var temp = '';
-	for (var i =0; i < length; i++){
-		option_text =  '<option value="' + data.languages[i][language] + '">' + data.languages[i][language] + '</option>' + "\n";
-		temp = select_text.concat(option_text);
-		select_text = temp;
-	}
-	option_text = '</select>' + "\n";
-	temp = select_text.concat(option_text);
-	select_text = temp;
-	//hidden
-	var hidden_text =  '<input type="hidden" id="audio_div" name="audio_div" value="' + div + '">' + "\n";
-	// submit
-	var submit_text =  '<input type="submit" value="' + data.save[language] + '">' + "\n" + '</form></div>';
-	// put together
-	document.getElementById(div).innerHTML = title_text + select_text + hidden_text + submit_text; 
 
-};
-function savePrimaryAudioOption(){
-	var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
-    var audioOption = document.getElementById("audio_options").value;
-	window.localStorage.setItem("mc2PrimaryAudioLanguage", audioOption);
-	var div = document.getElementById("audio_div").value;
 
-    if( audioOption != data.default_audio_language){
-		displayAlternativeAudioOption(div);
-	}
-	else{
-		 window.localStorage.removeItem("mc2AlternativeAudioLanguage");
-		 changeVideosDisplayed();
-	}
-}
-function displayAlternativeAudioOption(div){
-	var language = getInterfaceLanguage();
-    var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
-	var form_text = '<div class="alert"><form onsubmit="saveAlternateAudioOption();">' + "\n";
-	var alternative_text = '<h3>' + data.alternative_language[language] + '</h3>'+ "\n";
-	var temp1 = '<input type="radio" id="yes" name="alternative" value="yes">' + "\n";
-	var temp2 = '<label for="no">' + data.yes[language] + '</label><br>' + "\n";
-	var temp3 = ' <input type="radio" id="no" name="alternative" value="no">' + "\n";
-	var temp4= '<label for="yes">' + data.no[language] + '</label><br></br>' + "\n";
-	var temp = alternative_text.concat(temp1, temp2, temp3, temp4);
-	alternative_text = temp;
-	//hidden
-	var hidden_text =  '<input type="hidden" id="audio_div" name="audio_div" value="' + div + '">' + "\n";
-	var submit_text =  '<input type="submit" value="' + data.save[language] + '">' + "\n" + '</form></div>';
-	// put together
-	var message = form_text + alternative_text + hidden_text + submit_text;
-	document.getElementById(div).innerHTML =  message;
-	
-}
-function saveAlternateAudioOption(){
-    if (document.getElementById("yes").checked){
-		var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
-        window.localStorage.setItem("mc2AlternativeAudioLanguage", data.default_audio_language);
-    }
-    else{
-        window.localStorage.removeItem("mc2AlternativeAudioLanguage");
-    }
-	var div = document.getElementById("audio_div").value;
-    changeVideosDisplayed();
-}
 
  function changeVideosDisplayed(){
 	 alert('I will modify videos displayed'); 
