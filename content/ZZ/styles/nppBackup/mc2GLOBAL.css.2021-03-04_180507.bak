@@ -10,6 +10,12 @@
   --color-reveal-mc2: grey;
   --color-bible-link-mc2: #164c7f;
 }
+.alert{
+background-color: yellow;
+margin-left: 10px;
+margin-right:10px;
+padding: 10px;
+}
 
 #offline-ready {
   color: var(--color-up-mc2);
@@ -98,7 +104,6 @@ hr.reveal {
   background-repeat: no-repeat;
 }
 .action,
-.external-movie,
 .collapsible {
   color: white;
   margin-top: 20px;
@@ -125,7 +130,7 @@ hr.reveal {
   background-position: 8px 8px;
   background-repeat: no-repeat;
 }
-.external-movie {
+.collapsible.external-movie {
   background: var(--color-blue-mc2) url(/images/video.png);
   background-position: 8px 15px;
   background-repeat: no-repeat;
@@ -680,12 +685,4 @@ div.float left {
   text-align: left;
   background-color: var(--color-blue-mc2);
   color: white;
-}
-.alert {
-  background-color: yellow;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
 }

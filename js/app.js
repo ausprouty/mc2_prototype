@@ -103,6 +103,7 @@ window.onload = function () {
     showNotes(notes);
   }
   findCollapsible();
+  findVideos();
   findSummaries();
   if (localStorage.getItem("mc2Trainer")) {
     // unhide all trainer notes
@@ -140,21 +141,28 @@ function findSummaries(){
         var new_text = text.replace('-', '+');
       }
 			this.innerHTML = new_text;
+      // get nextElementSibling
 			var content = this.nextElementSibling;
+      // hide or show?
 			if (content.style.display === "block") {
 				content.style.display = "none";
 				this.classList.remove('summary-shown');
 				this.classList.add('summary-hidden');
 			} else {
+        
 				content.style.display = "block";
 				this.classList.remove('summary-hidden');
 				this.classList.add('summary-shown');
+
 			}
 		});
 	}
 }
 
+
+
 function findCollapsible(){
+ 
 	var coll = document.getElementsByClassName("collapsible");
 	var i;
 	for (i = 0; i < coll.length; i++) {
@@ -175,6 +183,91 @@ function findCollapsible(){
 		   
 		});
 	}
+}
+function findVideos(){
+ 
+	var coll = document.getElementsByClassName("external-movie");
+	var i;
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.display === "block") {
+				content.style.display = "none";
+        this.classList.remove('revealed');
+        this.classList.add('external-movie');
+			} else {
+        // modify content
+        var video = content.innerHTML;
+        if (!video.match(/<iframe/g)){
+          var iframe =  createIframeArclight(video);
+          content.innerHTML = iframe;
+        }
+				content.style.display = "block";
+        this.classList.remove('external-movie');
+        this.classList.add('revealed');
+			}
+		   
+		});
+	}
+}
+function createIframeArclight(video){
+  var template = `<div class="arc-cont">
+    <iframe src="https://api.arclight.org/videoPlayerUrl?refId=[video]" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+  <style>.arc-cont{position:relative;display:block;margin:10px auto;width:100%}.arc-cont:after{padding-top:59%;display:block;content:""}.arc-cont>iframe{position:absolute;top:0;bottom:0;right:0;left:0;width:98%;height:98%;border:0}</style>
+  </div>`; 
+  var video = addLanguageCodeToVideo(video);
+  var iframe = template.replace("[video]", video);
+  return iframe;
+}
+function addLanguageCodeToVideo(video){
+  var yourVideo = null;
+  var languageCode = null;
+  if (video.match(/[acts]/g)){
+    languageCode = getLanguageCodeForVideo('acts');
+    yourVideo = video.replace('[acts]', languageCode);
+  }
+  else if (video.match(/[jfilm]/g)){
+    languageCode = getLanguageCodeForVideo('jfilm');
+    yourVideo = video.replace('[jfilm]', languageCode);
+  }
+  else if (video.match(/[lumo]/g)){
+    languageCode = getLanguageCodeForVideo('vimeo');
+    yourVideo = video.replace('[lumo]', languageCode);
+    //todo: also need to replace English
+  }
+  else if (video.match(/[vimeo]/g)){
+    languageCode = getLanguageCodeForVideo('vimeo');
+    yourVideo = video.replace('[vimeo]', languageCode);
+  }
+  return yourVideo;
+
+}
+function getLanguageCodeForVideo(video_code){
+  var language = window.localStorage.getItem("mc2PrimaryAudioLanguage","English" );
+  var code = languageCodeForVideo (language, video_code);
+  if (!code){
+    language = window.localStorage.getItem("mc2AlternativeAudioLanguage","English" );
+    code = languageCodeForVideo (language, video_code);
+  }
+  return code;
+
+}
+function languageCodeForVideo (language, video_code){
+  var data = JSON.parse(window.localStorage.getItem("mc2AudioOptions"));
+  for (var i = 0; i < data.languages.length; i++){
+    if (data.languages[i].english == language){
+      if (data.languages[i][video_code]){
+        return data.languages[i][video_code];
+      }
+      else{
+        return null;
+      }
+    }
+  }
+  return null;
+  
+
 }
 
 // page is set in the nav bar of each web page
