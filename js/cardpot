@@ -197,5 +197,3 @@ function mc2SaveAlternateAudioOption(){
 	var div = document.getElementById("audio_div").value;
     mc2ChangeVideosDisplayed();
 }
-
-function mc2GetVideoPreferences

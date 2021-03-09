@@ -1,4 +1,38 @@
-document.addEventListener("onload", mc2ShowFolderVideoOptions('cmn'));
+document.addEventListener("onload", localConsiderShowingFolderVideoOptions('cmn'));
+
+function localConsiderShowingFolderVideoOptions(folder){
+    if (!localGetPreference("mc2PrimaryAudioLanguage")){
+            mc2DisplayPrimaryAudioOptions('showVideoOptions');
+    }
+}
+
+function localFolder(){
+  return 'cmn';
+}
+function localGetPreference(preference, alternative){
+    var data = mc2GetVideoPreferences();
+    var folder = localFolder();
+    var preferences = data[folder];
+    console.log (preferences);
+    var preference = preferences[preference];
+    if (!preference){
+        preference = alternative;
+    }
+    return preference;
+}
+function localSetPreference(preference, value){
+    var data = mc2GetVideoPreferences();
+    var folder = localFolder();
+    data[folder][preference] = value;
+    mc2SaveVideoPreferences(data);
+}
+function localRemovePreference(preference){
+    var data = mc2GetVideoPreferences(); 
+    var folder = localFolder();
+    data[folder][preference] = null;
+    mc2SaveVideoPreferences(data); 
+}
+
 
 function localVideoData(){
     var local = `
