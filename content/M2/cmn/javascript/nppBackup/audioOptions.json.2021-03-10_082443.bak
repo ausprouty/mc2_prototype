@@ -2,7 +2,7 @@
 
 {
 	"content_folder": "M2/cmn",
-    "default_display_language": "english",
+    "default_language_display": "simplified",
 	"default_audio_language": "Mandarin",
     "alternative_language": {
         "english": "Do you want to watch a video in Mandarin if we do not have the video in your prefered language?",

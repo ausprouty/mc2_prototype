@@ -1,45 +1,136 @@
 document.addEventListener("onload", localConsiderShowingFolderVideoOptions('cmn'));
 
 function localConsiderShowingFolderVideoOptions(folder){
-    if (!localGetPreference("mc2PrimaryAudioLanguage")){
-            mc2DisplayPrimaryAudioOptions('showVideoOptions');
+    if (!localGetPreferenceValue("mc2PrimaryVideoLanguage")){
+            localDisplayPrimaryVideoOptions('showVideoOptions');
     }
 }
 
+function localDisplayPrimaryVideoOptions(div, video_type = "all"){ 
+    var language = localGetDisplayLanguage();
+    var data = localVideoData();
+    // select language
+    var title_text = '<div class="alert"><form onsubmit="localSavePrimaryVideoOption();">' + "\n" + '<h3>' + data.select_language[language] + '</h3>'+ "\n";
+    var select_text = '<select name="local_video_options" id="local_video_options">'+ "\n";
+    var options = data.languages;
+    var length = data.languages.length;
+    var option_text = '';
+    var temp = '';
+    for (var i =0; i < length; i++){
+        if (video_type == 'all' || data.languages[i][video_type] ){
+            option_text =  '<option value="' + data.languages[i]['english'] + '">' + data.languages[i][language] + '</option>' + "\n";
+            temp = select_text.concat(option_text);
+            select_text = temp;
+        }
+    }
+    option_text = '</select>' + "\n";
+    temp = select_text.concat(option_text);
+    select_text = temp;
+    //hidden
+    var hidden_text =  '<input type="hidden" id="video_div" name="video_div" value="' + div + '">' + "\n";
+    // submit
+    var submit_text =  '<input type="submit" value="' + data.save[language] + '">' + "\n" + '</form></div>';
+    // put together
+    document.getElementById(div).innerHTML = title_text + select_text + hidden_text + submit_text; 
+
+};
+
+function localSavePrimaryVideoOption(){
+	var data = localVideoData();
+    var videoOption = document.getElementById("local_video_options").value;
+	localSetPreference("mc2PrimaryVideoLanguage", videoOption);
+	var div = document.getElementById("video_div").value;
+
+    if( videoOption != data.default_video_language){
+		mc2DisplayAlternativeVideoOption(div);
+	}
+	else{
+        localRemovePreference("mc2AlternativeVideoLanguage");
+		 mc2ChangeVideosDisplayed();
+	}
+}
+
+//  helper functions
 function localFolder(){
   return 'cmn';
 }
-function localGetPreference(preference, alternative){
-    var data = mc2GetVideoPreferences();
-    var folder = localFolder();
-    var preferences = data[folder];
-    console.log (preferences);
-    var preference = preferences[preference];
-    if (!preference){
-        preference = alternative;
+function localGetPreferenceValue(preference, alternative = null){
+    var data = localGetVideoPreferences();
+    if (!data){
+        return null;
     }
-    return preference;
+    var value = null;
+    var folder = localFolder();
+    for (var i = 0; i < data.length; i++) {
+        if (data[i].folder === folder) {
+            value = data[i][preference] ;
+            break;
+        }
+    }
+    if (!value){
+        value = alternative;
+    }
+    return value;
 }
 function localSetPreference(preference, value){
     var data = mc2GetVideoPreferences();
     var folder = localFolder();
-    data[folder][preference] = value;
-    mc2SaveVideoPreferences(data);
+    var found = false;
+    if (data.length > 0){
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].folder === folder) {
+              data[i][preference] = value;
+              found = true;
+              break;
+            }
+        }
+        if (!found){
+            var row = '{"folder": "' + folder +'", "' + preference + '": "' + value +'"}';
+            var obj = JSON.parse(row);
+            data.push(obj);
+        }
+    }
+    else{
+        var row = '[{"folder": "' + folder +'", "' + preference + '": "' + value +'"}]';
+        data = JSON.parse(row);
+    }
+    localSaveVideoPreferences(data);
 }
 function localRemovePreference(preference){
     var data = mc2GetVideoPreferences(); 
     var folder = localFolder();
-    data[folder][preference] = null;
-    mc2SaveVideoPreferences(data); 
+    for (var i = 0; i < data.length; i++) {
+        if (data[i].folder === folder) {
+           delete data[i][preference] ;
+           break;
+        }
+    }
+    localSaveVideoPreferences(data); 
 }
-
-
+function localGetVideoPreferences(){
+    if (window.localStorage.getItem("mc2VideoPreferences")){
+        return JSON.parse(window.localStorage.getItem("mc2VideoPreferences"));
+    }
+    return null;
+}
+function localSaveVideoPreferences(raw_data){
+    var data = JSON.stringify(raw_data);
+    window.localStorage.setItem("mc2VideoPreferences", data);
+}
+function localGetDisplayLanguage(){
+    var data = localVideoData();
+    if (data.default_display_language){
+        return data.default_display_language;
+    }
+    return null;
+}
 function localVideoData(){
     var local = `
     {
         "content_folder": "M2/cmn",
-        "default_language_display": "simplified",
-        "default_audio_language": "Mandarin",
+        "default_display_language2": "simplified",
+        "default_display_language": "english",
+        "default_video_language": "Mandarin",
         "alternative_language": {
             "english": "Do you want to watch a video in Mandarin if we do not have the video in your prefered language?",
             "simplified": "如果我们没有您喜欢的语言的视频，您想看普通话的视频吗？ ",
