@@ -27,11 +27,12 @@ function localDisplayPrimaryVideoOptions(div, video_type = "all"){
     temp = select_text.concat(option_text);
     select_text = temp;
     //hidden
-    var hidden_text =  '<input type="hidden" id="video_div" name="video_div" value="' + div + '">' + "\n";
+    var hidden_text1 =  '<input type="hidden" id="video_div" name="video_div" value="' + div + '">' + "\n";
+    var hidden_text2 =  '<input type="hidden" id="video_type" name="video_type" value="' + video_type + '">' + "\n";
     // submit
     var submit_text =  '<input type="submit" value="' + data.save[language] + '">' + "\n" + '</form></div>';
     // put together
-    document.getElementById(div).innerHTML = title_text + select_text + hidden_text + submit_text; 
+    document.getElementById(div).innerHTML = title_text + select_text + hidden_text1 + hidden_text2 + submit_text; 
 
 };
 
@@ -40,14 +41,16 @@ function localSavePrimaryVideoOption(){
     var videoOption = document.getElementById("local_video_options").value;
 	localSetPreference("mc2PrimaryVideoLanguage", videoOption);
 	var div = document.getElementById("video_div").value;
-
-    if( videoOption != data.default_video_language){
-		mc2DisplayAlternativeVideoOption(div);
-	}
-	else{
-        localRemovePreference("mc2AlternativeVideoLanguage");
-		 mc2ChangeVideosDisplayed();
-	}
+    var video_type = document.getElementById("video_type").value;
+    if (video_type == 'all'){
+        if( videoOption != data.default_video_language){
+            mc2DisplayAlternativeVideoOption(div);
+        }
+        else{
+            localRemovePreference("mc2AlternativeVideoLanguage");
+             mc2ChangeVideosDisplayed();
+        }
+    }
 }
 
 //  helper functions

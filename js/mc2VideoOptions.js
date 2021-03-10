@@ -120,7 +120,7 @@ function mc2CreateIframeArclight(video){
       <iframe src="https://api.arclight.org/videoPlayerUrl?refId=[my_video]" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
     <style>.arc-cont{position:relative;display:block;margin:10px auto;width:100%}.arc-cont:after{padding-top:59%;display:block;content:""}.arc-cont>iframe{position:absolute;top:0;bottom:0;right:0;left:0;width:98%;height:98%;border:0}</style>
     </div>
-    <div id="Change[video]" class="changeLanguage" onClick="mc2ChangeVideoLanguage('Change[video]')"> [ChangeLanguage] </div>
+    <div class="changeLanguage" onClick="mc2ChangeVideoLanguage('ShowOptionsFor[video]')"> [ChangeLanguage] </div>
     `; 
     var my_video = mc2FindLanguageCodeForVideo(video);
     var temp = template.replaceAll("[video]", video);
