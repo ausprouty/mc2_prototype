@@ -1,4 +1,6 @@
 
+document.addEventListener("onload", mc2DecideWhichVideosToShow());
+
 function mc2DecideWhichVideosToShow(){  // called by app.js
 	var coll = document.getElementsByClassName("external-movie");
 	var i;
@@ -113,8 +115,8 @@ function mc2SaveAlternateVideoOption(){
     mc2ChangeVideosDisplayed();
 }
 function mc2CreateIframeArclight(video){
-    var language = localGetPreferenceValue("mc2DisplayLanguage","english" );
     var data = localVideoData();
+    var language = mc2GetDisplayLanguage();
     var change_language = data.change_language[language];
     var template = `<div class="arc-cont">
       <iframe src="https://api.arclight.org/videoPlayerUrl?refId=[my_video]" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>

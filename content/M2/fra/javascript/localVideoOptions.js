@@ -1,6 +1,7 @@
 document.addEventListener("onload", localConsiderShowingFolderVideoOptions('cmn'));
 
 function localConsiderShowingFolderVideoOptions(folder){
+	return; // there are no options now.
     if (!localGetPreferenceValue("mc2PrimaryVideoLanguage")){
             localDisplayPrimaryVideoOptions('showVideoOptions');
     }
@@ -130,55 +131,57 @@ function localGetDisplayLanguage(){
 function localVideoData(){
     var local = `
     {
-        "content_folder": "M2/cmn",
-        "default_display_language": "simplified",
-        "default_video_language": "Mandarin",
+        "content_folder": "M2/fra",
+        "default_display_language": "french",
+        "default_video_language": "French",
         "alternative_language": {
-            "english": "Do you want to watch a video in Mandarin if we do not have the video in your prefered language?",
+            "english": "Do you want to watch a video in English if we do not have the video in your prefered language?",
+			"french": "Voulez-vous regarder une vidéo en anglais si nous n'avons pas la vidéo dans votre langue préférée?"
             "simplified": "如果没有您想要的语言视频，您会想看普通话的视频吗？",
             "traditional": "如果没有您想要的语言视频，您会想看普通话的视频吗？"
         },
         "save": {
             "english": "Save",
+			"french": "Sauvegarder",
             "simplified": "保存",
             "traditional": "保存"
         },
         "select_language": {
             "english": "Prefered language for videos",
+			"french": "Langue préférée pour les vidéos",
             "simplified": "视频的首选语言",
             "traditional": "視頻的首選語言"
         },
         "change_language": {
             "english": "Change language for videos",
+			"french": "Changer la langue des vidéos",
             "simplified": "更改视频语言 ",
             "traditional": "更改視頻語言"
         },
         "yes": {
             "english": "Yes",
+			"french": "Oui",
             "simplified": "确定",
             "traditional": "確定"
         },
         "no": {
             "english": "No",
+			"french": "Non",
             "simplified": "取消",
             "traditional": "取消"
         },
         
         "languages": [
 		{
-                "jfilm": "1_20615",
-                "acts" : "2_20615",
-                "folder": "mandarin.html",
-                "english": "Mandarin",
-                "simplified": "普通话",
-                "traditional": "普通話"
-            },
-            {
-                "jfilm": "1_20601",
-                "folder": "cantonese.html",
-                "english": "Cantonese",
-                "simplified": "广东话",
-                "traditional": "廣東話"
+			{
+                "jfilm": "1_496",
+                "acts" : "2_496",
+                "lumo": "6_496", 
+                "folder": "french.html",
+                "english": "French",
+				"french": "Français",
+                "simplified": "法语",
+                "traditional": "法語 "
             },
 			{
                 "jfilm": "1_529",
@@ -186,115 +189,11 @@ function localVideoData(){
                 "lumo": "6_529", 
                 "folder": "english.html",
                 "english": "English",
+				"french": "Anglais",
                 "simplified": "英语",
                 "traditional": "英語"
-            },
-            {
-                "jfilm": "1_23033",
-                "folder": "chinese-foochow.html",
-                "english": "Foochow",
-                "simplified": "福州话",
-                "traditional": "福州話"
-            },
-            {
-                "jfilm": "1_53352",
-                "folder": "chinese-guiliu.html",
-                "english": "Guiliu",
-                "simplified": "桂柳话",
-                "traditional": "桂柳話"
-            },
-            {
-                "jfilm": "1_13192",
-                "folder": "chinese-hainanese.html",
-                "english": "Hainanese",
-                "simplified": "海南话",
-                "traditional": "海南話"
-            },
-            {
-                "jfilm": "1_20611",
-                "folder": "chinese-hakka.html",
-                "english": "Hakka",
-                "simplified": "客家话",
-                "traditional": "客家話"
-            },
-            {
-                "jfilm": "1_21211",
-                "folder": "chinese-hui.html",
-                "english": "Hui",
-                "simplified": "回族语",
-                "traditional": "回族語"
-            },
-            
-            {
-                "jfilm": "1_24096",
-                "folder": "chinese-qinghai.html",
-                "english": "Qinghai",
-                "simplified": "青海话",
-                "traditional": "青海話"
-            },
-            {
-                "jfilm": "1_20623",
-                "folder": "chinese-shanghainese.html",
-                "english": "Shanghainese",
-                "simplified": "上海话",
-                "traditional": "上海話"
-            },
-            {
-                "jfilm": "1_23062",
-                "folder": "chinese-sichuan.html",
-                "english": "Sichuan",
-                "simplified": "四川话",
-                "traditional": "四川話"
-            },
-            {
-                "jfilm": "1_23221",
-                "folder": " chinese-taiwanese-mandarin.html",
-                "english": "Taiwanese Mandarin",
-                "simplified": "國語",
-                "traditional": "國語"
-            },
-            {
-                "jfilm": "1_23075",
-                "folder": "chinese-teochew.html",
-                "english": "Teochew",
-                "simplified": "潮汕话",
-                "traditional": "潮州話"
-            },
-            {
-                "jfilm": "1_20627",
-                "folder": "chinese-xiang.html",
-                "english": "Xiang",
-                "simplified": "湖南话",
-                "traditional": "湖南話"
-            },
-            {
-                "jfilm": "1_23061",
-                "folder": "chinese-yunnan-kunming.html",
-                "english": "Yunnan (Kunming)",
-                "simplified": "昆明话",
-                "traditional": "昆明話"
-            },
-            {
-                "jfilm": "1_410",
-                "folder": "uyghur.html",
-                "english": "Uyghur",
-                "simplified": "维吾尔语",
-                "traditional": "維吾爾語"
-            },
-            {
-                "jfilm": "1_21795",
-                "folder": "tibetan-lhasa.html",
-                "english": "Lhasa",
-                "simplified": "藏语（拉萨）",
-                "traditional": "藏語（拉薩）"
-            },
-            {
-                "jfilm": "1_23089",
-                "folder": "tibetan-amdo.html",
-                "english": "Amdo",
-                "simplified": "藏语（安多）",
-                "traditional": "藏語（安多）"
             }
+            
         ]
     }`;
     var data = JSON.parse(local);

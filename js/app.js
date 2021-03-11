@@ -103,7 +103,7 @@ window.onload = function () {
     showNotes(notes);
   }
   findCollapsible();
-  mc2DecideWhichVideosToShow();
+  //mc2DecideWhichVideosToShow();
   findSummaries();
   if (localStorage.getItem("mc2Trainer")) {
     // unhide all trainer notes
